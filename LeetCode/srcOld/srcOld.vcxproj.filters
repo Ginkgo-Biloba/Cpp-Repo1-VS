@@ -377,6 +377,9 @@
       <Filter>201-300</Filter>
     </ClCompile>
     <ClCompile Include="960-del_col_make_sorted.cpp" />
+    <ClCompile Include="295-median_in_stream.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility.hpp">

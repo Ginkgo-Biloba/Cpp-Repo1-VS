@@ -1,15 +1,22 @@
 // 这句注释防止 VS 改变编码
 #include "../srcOld/utility.hpp"
 
-int tallestBillboard(vector<int>& rods)
+int countDigitOne(int n)
 {
+	int ans = 0;
+	while (n)
+	{
+		ans += 	n / 10 + 1;
 
+	}
+	return ans;
 }
 
 
 int main()
 {
-	vector<int> rods = { 1, 2, 3, 4, 5, 6 };
-	int n = tallestBillboard(rods);
-	printf("minDeletionSize = %d\n", n);
+	int n = 1;
+	int ans = countDigitOne(n);
+	printf("countDigitOne(%d) = %d\n", n, ans);
 }
+

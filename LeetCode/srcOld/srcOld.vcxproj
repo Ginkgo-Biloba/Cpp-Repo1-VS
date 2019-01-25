@@ -298,6 +298,7 @@
     <ClCompile Include="223-rect_area.cpp" />
     <ClCompile Include="227-basic_calculator_2.cpp" />
     <ClCompile Include="228-summary_ranges.cpp" />
+    <ClCompile Include="295-median_in_stream.cpp" />
     <ClCompile Include="483-smallest_base.cpp" />
     <ClCompile Include="639-decode_ways_2.cpp" />
     <ClCompile Include="887-super_egg_drop.cpp" />

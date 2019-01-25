@@ -4,9 +4,7 @@ import math
 
 
 def func(x):
-	x = 1
+	x = math.sin(1)
+	return x
 
-
-
-x = 0
-print(" =", func(x))
+print("func(x) =", func(1))
