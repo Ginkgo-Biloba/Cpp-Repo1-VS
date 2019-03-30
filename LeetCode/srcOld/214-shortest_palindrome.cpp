@@ -1,9 +1,9 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
 
 class Solution
 {
-	/* ¶¼ÊÇ³­µÄ */
+	/* éƒ½æ˜¯æŠ„çš„ */
 protected:
 	string cvtKMP(string const& str)
 	{
@@ -12,7 +12,7 @@ protected:
 		string longstr = str + "#" + rev;
 
 		size_t len = longstr.size();
-		// Õâ¸ö±í£¬µÚ i Î»´æµÄÊÇÆÕÍ¨ KMP µÄµÚ i + 1 Î»
+		// è¿™ä¸ªè¡¨ï¼Œç¬¬ i ä½å­˜çš„æ˜¯æ™®é€š KMP çš„ç¬¬ i + 1 ä½
 		vector<size_t> kmp(longstr.size(), 0);
 		for (size_t i = 1; i < len; ++i)
 		{
@@ -30,7 +30,7 @@ protected:
 	string cvtRabinKarp(string const& str)
 	{
 		static unsigned const sBase = 127u;
-		static unsigned const sMod = 65521u; // Æ½·½²»´óÓÚ UINT_MAX µÄ×î´óÖÊÊı;
+		static unsigned const sMod = 65521u; // å¹³æ–¹ä¸å¤§äº UINT_MAX çš„æœ€å¤§è´¨æ•°;
 		unsigned len = static_cast<unsigned>(str.size());
 		if (len < 2u) return str;
 		string rev = str;

@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
 
 void reverseRegion(string& str, unsigned l, unsigned r)
@@ -15,12 +15,12 @@ void reverseRegion(string& str, unsigned l, unsigned r)
 
 void reverseWords(string &str)
 {
-	// ɾβ���ո�
+	// 删尾部空格
 	if (str.empty()) return;
 	while (str.back() == ' ') str.pop_back();
 	if (str.empty()) return;
 
-	// ɾ�м�ո�
+	// 删中间空格
 	unsigned len = static_cast<unsigned>(str.size());
 	unsigned prev = 0u, cur = 0u;
 	while ((cur < len) && (str[cur] == ' ')) ++cur;
@@ -38,7 +38,7 @@ void reverseWords(string &str)
 	for (; cur != prev; --cur)
 		str.pop_back();
 
-	// �ֲ���ת
+	// 局部翻转
 	len = prev;
 	prev = cur = 0u;
 	for (; cur < len; ++cur)
@@ -51,10 +51,10 @@ void reverseWords(string &str)
 	}
 	reverseRegion(str, prev, len);
 
-	// ���巭ת
+	// 整体翻转
 	reverseRegion(str, 0u, len);
 
-	// ɾβ���ո�
+	// 删尾部空格
 	while (str.back() == ' ') str.pop_back();
 }
 

@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 /* 计算 N 皇后解的个数 */
 class Queens

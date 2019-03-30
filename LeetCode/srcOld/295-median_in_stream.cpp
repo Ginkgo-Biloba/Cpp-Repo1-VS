@@ -1,8 +1,9 @@
-// 这句注释防止 VS 改变编码
-#include "../srcOld/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
+// 抄的
 class MedianFinder
 {
+	// 顶部是队列中最大元素，存储的加进来的较小的数据
 	std::priority_queue<int> qMax;
 	std::priority_queue<int, vector<int>, std::greater<int>> qMin;
 public:
@@ -46,4 +47,5 @@ int main()
 		med.addNum(i);
 		printf("%.2f, ", med.findMedian());
 	}
+	printf("\n");
 }

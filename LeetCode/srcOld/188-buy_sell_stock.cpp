@@ -1,8 +1,8 @@
-#include <vector>
+﻿#include <vector>
 #include <cstdio>
 #include <algorithm>
 
-// 最多交易 2 次。用状态机 (动态规划) 更好
+// 123. 最多交易 2 次。用状态机 (动态规划) 更好
 int maxProfit2(std::vector<int>& prices)
 {
 	int const len = static_cast<int>(prices.size());
@@ -47,27 +47,27 @@ int maxProfit2(std::vector<int>& prices)
 }
 
 
-// 使用状态机，参考 2 次交易的讨论
+// 188. 最多交易 k 次，使用状态机，参考 2 次交易的讨论
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/149383/Easy-DP-solution-using-state-machine-O(n)-time-complexity-O(1)-space-complexity
 int maxProfitK(int k, std::vector<int>& prices)
 {
-	unsigned const len = static_cast<unsigned>(prices.size());
-	if ((len < 2u) || (k < 1)) return 0;
-	k = std::min<int>(k, len / 2u);
+	int const len = static_cast<int>(prices.size());
+	if ((len < 2) || (k < 1)) return 0;
+	k = std::min<int>(k, len / 2);
 
-	unsigned const kk = static_cast<unsigned>(k + k);
+	int const kk = static_cast<int>(k + k);
 	std::vector<int> states(kk, INT_MIN);
 	states[0] = -prices[0];
 
-	for (unsigned l = 1u; l < len; l++)
+	for (int idx = 1; idx < len; idx++)
 	{
-		int const p = prices[l];
+		int const p = prices[idx];
 		states[0] = std::max(states[0], -p);
 		states[1] = std::max(states[1], states[0] + p);
-		for (unsigned i = 2u; i < kk; i += 2u)
+		for (int i = 2; i < kk; i += 2)
 		{
-			states[i] = std::max(states[i], states[i - 1u] - p);
-			states[i + 1u] = std::max(states[i + 1u], states[i] + p);
+			states[i] = std::max(states[i], states[i - 1] - p);
+			states[i + 1] = std::max(states[i + 1], states[i] + p);
 		}
 	}
 
@@ -76,21 +76,22 @@ int maxProfitK(int k, std::vector<int>& prices)
 	return ans;
 }
 
-// 卖出的下一天不能买
+
+// 309. 卖出的下一天不能买
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75930/Very-Easy-to-Understand-One-Pass-O(n)-Solution-with-No-Extra-Space
 int maxProfitCD(std::vector<int>& prices)
 {
-	unsigned const len = static_cast<unsigned>(prices.size());
-	if (len < 2u) return 0;
+	int const len = static_cast<int>(prices.size());
+	if (len < 2) return 0;
 
 	int sell = INT_MIN;   // 有股票，卖掉     1 <- (2, 3)
 	int hold = INT_MIN;   // 有股票，不操作   2 <- (2, 3)
 	int buy = -prices[0]; // 没有股票，买进   3 <- (4)
 	int cool = 0;         // 没有股票，不操作 4 <- (1, 4)
 
-	for (unsigned l = 0; l < len; l++)
+	for (int i = 0; i < len; i++)
 	{
-		int const p = prices[l];
+		int const p = prices[i];
 
 		// 根据依赖关系得到更新顺序 2, 3, 4, 1
 		// 一步步计算会发现不需要 newsell
@@ -99,6 +100,31 @@ int maxProfitCD(std::vector<int>& prices)
 		buy = cool - p;
 		cool = std::max(sell, cool);
 		sell = hold + p; // newsell
+	}
+
+	int ans = std::max(sell, cool);
+	return ans;
+}
+
+
+// 714. 任意多次，交易一次有费用。参考 2 次的讨论
+int maxProfitTF(std::vector<int>& prices, int fee)
+{
+	int const len = static_cast<int>(prices.size());
+	if (len < 2) return 0;
+
+	int sell = INT_MIN / 2; // 有股票，卖掉     1 <- (2, 3)
+	int hold = INT_MIN / 2; // 有股票，不操作   2 <- (2, 3)
+	int buy = -prices[0];   // 没有股票，买进   3 <- (4)
+	int cool = 0;           // 没有股票，不操作 4 <- (1, 4)
+
+	for (int i = 1; i < len; i++)
+	{
+		int const p = prices[i];
+		hold = std::max(hold, buy);
+		cool = std::max(sell, cool);
+		buy = cool - p; // 因为无限次交易，所以可以用新的 cool 表示卖了立即买
+		sell = hold + p - fee;
 	}
 
 	int ans = std::max(sell, cool);

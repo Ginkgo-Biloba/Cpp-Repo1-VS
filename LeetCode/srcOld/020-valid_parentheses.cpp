@@ -1,4 +1,4 @@
-#include <cstring>
+﻿#include <cstring>
 #include <cstdio>
 #include <cstdlib>
 #ifdef _MSC_VER

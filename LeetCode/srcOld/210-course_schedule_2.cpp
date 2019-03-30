@@ -1,9 +1,9 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
 typedef vector<pair<int, int>> vecpair;
 
-/** ÆÀÂÛÀïÃæ¶¼ËµÓÃÍØÆËÅÅĞò£¬±Ï¾¹ÏÂÒ»µÀÌâÒªÓÃ
- * ÆäÊµÕâÀïÒ²¿ÉÒÔ¼ì²âÓĞÏòÍ¼ÓĞÃ»ÓĞ»· */
+/** è¯„è®ºé‡Œé¢éƒ½è¯´ç”¨æ‹“æ‰‘æ’åºï¼Œæ¯•ç«Ÿä¸‹ä¸€é“é¢˜è¦ç”¨
+ * å…¶å®è¿™é‡Œä¹Ÿå¯ä»¥æ£€æµ‹æœ‰å‘å›¾æœ‰æ²¡æœ‰ç¯ */
 bool canFinish(int const numCrs, vecpair const& requires)
 {
 	vector<vector<char>> before(numCrs, vector<char>(numCrs));
@@ -13,20 +13,20 @@ bool canFinish(int const numCrs, vecpair const& requires)
 
 	for (size_t i = 0; i < len; ++i)
 	{
-		// ½øĞĞÇ°ÃæµÄ£¬ĞèÒªÏÈÍê³ÉºóÃæµÄ
+		// è¿›è¡Œå‰é¢çš„ï¼Œéœ€è¦å…ˆå®Œæˆåé¢çš„
 		cond = requires[i];
-		// if ÎªÁË´¦ÀíÖØ¸´Çé¿ö
+		// if ä¸ºäº†å¤„ç†é‡å¤æƒ…å†µ
 		if (before[cond.second][cond.first] == 0)
 			++(indegree[cond.first]);
 		before[cond.second][cond.first] = 1;
 	}
 
 	size_t finish = 0;
-	// ÆäÊµÓ¦¸ÃÓÃ¶ÓÁĞµÄ£¬µ«ÊÇ·´ÕıÓÖ²»ÓÃÍùÇ°Ìî³ä
+	// å…¶å®åº”è¯¥ç”¨é˜Ÿåˆ—çš„ï¼Œä½†æ˜¯åæ­£åˆä¸ç”¨å¾€å‰å¡«å……
 	vector<int> take; take.reserve(numCrs);
 	for (int i = 0; i < numCrs; ++i)
 	{
-		// ²»ĞèÒªÈÎºÎÏÈĞĞ¿Î³Ì
+		// ä¸éœ€è¦ä»»ä½•å…ˆè¡Œè¯¾ç¨‹
 		if (indegree[i] == 0)
 			take.push_back(i);
 	}
@@ -39,7 +39,7 @@ bool canFinish(int const numCrs, vecpair const& requires)
 			if (before[course][i])
 			{
 				--(indegree[i]);
-				// ÏÈĞĞ¿Î³ÌÒÑ¾­½áÊø
+				// å…ˆè¡Œè¯¾ç¨‹å·²ç»ç»“æŸ
 				if (indegree[i] == 0)
 					take.push_back(i);
 			}
@@ -59,9 +59,9 @@ vector<int> findOrder(int const numCrs, vecpair const& requires)
 
 	for (size_t i = 0; i < len; ++i)
 	{
-		// ½øĞĞÇ°ÃæµÄ£¬ĞèÒªÏÈÍê³ÉºóÃæµÄ
+		// è¿›è¡Œå‰é¢çš„ï¼Œéœ€è¦å…ˆå®Œæˆåé¢çš„
 		cond = requires[i];
-		// if ÎªÁË´¦ÀíÖØ¸´Çé¿ö
+		// if ä¸ºäº†å¤„ç†é‡å¤æƒ…å†µ
 		if (before[cond.second][cond.first] == 0)
 			++(indegree[cond.first]);
 		before[cond.second][cond.first] = 1;
@@ -83,14 +83,14 @@ vector<int> findOrder(int const numCrs, vecpair const& requires)
 			if (before[course][i])
 			{
 				--(indegree[i]);
-				// ÏÈĞĞ¿Î³ÌÒÑ¾­½áÊø
+				// å…ˆè¡Œè¯¾ç¨‹å·²ç»ç»“æŸ
 				if (indegree[i] == 0)
 					take.push_back(i);
 			}
 		}
 	}
 
-	// Íê²»³É·µ»Ø¿ÕµÄ
+	// å®Œä¸æˆè¿”å›ç©ºçš„
 	if (static_cast<int>(finish) != numCrs)
 		take.clear();
 	return take;

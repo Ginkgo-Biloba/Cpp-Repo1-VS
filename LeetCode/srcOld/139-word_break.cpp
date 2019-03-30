@@ -1,7 +1,7 @@
-#include "../src/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
 
-bool wordBreak_dfs(string const & str, size_t slen, \
+bool wordBreak_dfs(string const& str, size_t slen, 
 	unordered_set<string> const& hash, vector<char>& cannot)
 {
 	if (slen == str.size()) return true;

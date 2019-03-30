@@ -1,6 +1,9 @@
-#include "../src/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
+/* 给定范围 [m, n]，其中 0 <= m <= n <= 2147483647
+ * 返回此范围内所有数字的按位与（包含 m, n 两端点）*/
 
+// 超时
 int rangeBitwiseAnd1(int m, int n)
 {
 	int ans = n;
@@ -10,12 +13,15 @@ int rangeBitwiseAnd1(int m, int n)
 }
 
 
+/* Consider the bits from low to high
+ * if n > m, the lowest bit will be 0, and then we could transfer the problem to sub-problem:
+ * rangeBitwiseAnd(m >> 1, n >> 1) */
 int rangeBitwiseAnd2(int m, int n)
 {
-	int mask = -1; // 0xffffffff;
+	unsigned mask = -1; // 0xffffffff;
 	for (; (m & mask) != (n & mask); mask <<= 1)
 		;
-	return m & mask;
+	return static_cast<int>(m & mask);
 }
 
 
@@ -31,7 +37,6 @@ int rangeBitwiseAnd3(int m, int n)
 }
 
 
-/* 这句注释只是为了防止纯 ANSCI 字符时 VS 改变文件编码 */
 int main()
 {
 	int ans1 = rangeBitwiseAnd1(10, 11);

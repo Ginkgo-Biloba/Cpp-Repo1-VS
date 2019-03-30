@@ -1,7 +1,7 @@
-#include "utility.hpp"
+ï»¿#include "utility.hpp"
 
 
-/** ×ÔÈ»Êı¼Ó¼õºÍÀ¨ºÅ¡£³­µÄ */
+/** è‡ªç„¶æ•°åŠ å‡å’Œæ‹¬å·ã€‚æŠ„çš„ */
 int calculate(string const& expr)
 {
 	int sign = 1, sum = 0, num = 0;
@@ -46,13 +46,13 @@ int calculate(string const& expr)
 }
 
 
-/** ×ÔÈ»Êı¼Ó¼õ³Ë³ı£¬²»´øÀ¨ºÅ¡£³­µÄ */
+/** è‡ªç„¶æ•°åŠ å‡ä¹˜é™¤ï¼Œä¸å¸¦æ‹¬å·ã€‚æŠ„çš„ */
 int calculate2(string& expr)
 {
-	char sign = '+'; // Ïàµ±ÓÚ expr Ç°ÃæÔÙÓĞ¸ö +
+	char sign = '+'; // ç›¸å½“äº expr å‰é¢å†æœ‰ä¸ª +
 	int sum = 0, num = 0;
 	vector<int> stack;
-	// ²»ÓÃÅĞ¶ÏÊÇ²»ÊÇ×îºóÒ»¸ö£¬ÒòÎª¿ÉÄÜÖ»ÓĞÒ»¸öÊı×Ö
+	// ä¸ç”¨åˆ¤æ–­æ˜¯ä¸æ˜¯æœ€åä¸€ä¸ªï¼Œå› ä¸ºå¯èƒ½åªæœ‰ä¸€ä¸ªæ•°å­—
 	expr.push_back('+');
 
 	for (char c : expr)

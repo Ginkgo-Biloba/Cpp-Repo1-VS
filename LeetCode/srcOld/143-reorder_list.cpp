@@ -1,25 +1,25 @@
-class Solution {
+ï»¿class Solution {
 public:
   void reorderList(ListNode* head)
   {
     ListNode dummy(0);
     ListNode* slow = head, *fast = head;
     
-    // len <= 2 ²»²Ù×÷
+    // len <= 2 ä¸æ“ä½œ
     if(!(head && head->next && head->next->next))
       return;
     
-    // ÕÒµ½ÖÐµã
+    // æ‰¾åˆ°ä¸­ç‚¹
     while (fast && fast->next)
     {
       slow = slow->next;
       fast = fast->next->next;
     }
-    // ¶Ï¿ª
+    // æ–­å¼€
     fast = slow->next;
     slow->next = nullptr;
     
-    // ·­×ªºó°ë²¿·Ö
+    // ç¿»è½¬åŽåŠéƒ¨åˆ†
     ListNode* prev = nullptr;
     if (fast && fast->next)
     {
@@ -33,7 +33,7 @@ public:
       fast = prev;
     }
     
-    // ºÏ²¢
+    // åˆå¹¶
     slow = head;
     prev = &dummy;
     while (slow && fast)
@@ -44,7 +44,7 @@ public:
       prev = fast;
       slow = s; fast = f;
     }
-    // ÆæÊýÇé¿ö
+    // å¥‡æ•°æƒ…å†µ
     if (slow)
       prev->next = slow;
     

@@ -1,4 +1,4 @@
-#define _CRT_MAP_ALLOC
+﻿#define _CRT_MAP_ALLOC
 #include <cstdio>
 #include <stdlib.h>
 #ifdef _MSC_VER

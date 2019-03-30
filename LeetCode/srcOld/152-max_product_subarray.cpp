@@ -1,6 +1,6 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
-/** ¿¼ÂÇµ½¸º¸ºµÃÕı£¬ÓëÇóºÍÏà±È£¬ĞèÒª¼Ç×¡Ò»¸ö×îĞ¡Öµ */
+/** è€ƒè™‘åˆ°è´Ÿè´Ÿå¾—æ­£ï¼Œä¸æ±‚å’Œç›¸æ¯”ï¼Œéœ€è¦è®°ä½ä¸€ä¸ªæœ€å°å€¼ */
 int maxProduct(vector<int> const& nums)
 {
 	if (nums.empty()) return 0;

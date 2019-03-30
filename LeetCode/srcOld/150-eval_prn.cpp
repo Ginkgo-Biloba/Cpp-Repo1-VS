@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
 
 int evalRPN(vector<string> const& tokens)
@@ -8,7 +8,7 @@ int evalRPN(vector<string> const& tokens)
 	for (string const& token : tokens)
 	{
 		char const val = token[0];
-		// ×¢Òâ¸ºÊı¿ªÍ·ÊÇ -
+		// æ³¨æ„è´Ÿæ•°å¼€å¤´æ˜¯ -
 		if (token.size() == (size_t)(1) && \
 			((val == '+') || (val == '-') || (val == '*') || (val == '/')))
 		{

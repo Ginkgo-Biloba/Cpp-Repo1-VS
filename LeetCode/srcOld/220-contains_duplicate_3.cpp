@@ -1,4 +1,4 @@
-#include "utility.hpp"
+﻿#include "utility.hpp"
 
 bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t)
 {

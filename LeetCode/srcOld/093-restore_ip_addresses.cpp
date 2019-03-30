@@ -1,5 +1,5 @@
-#pragma warning(disable: 4996)
-#include "../src/utility.hpp"
+﻿#pragma warning(disable: 4996)
+#include "../srcOld/utility.hpp"
 
 vector<string> restoreIpAddresses(string const& S)
 {

@@ -1,6 +1,7 @@
-#include <vector>
+﻿#include <vector>
 #include <cstdio>
 
+// 只能买一次
 int maxProfit(std::vector<int> const& prices)
 {
 	size_t const len = static_cast<int>(prices.size());

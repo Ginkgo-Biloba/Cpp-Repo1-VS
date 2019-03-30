@@ -1,4 +1,4 @@
-#include <cstdio>
+﻿#include <cstdio>
 
 bool canJump(int const* array, int num)
 {

@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
 
 int numIslands(vector<vector<char>>& grid)
@@ -8,9 +8,9 @@ int numIslands(vector<vector<char>>& grid)
 	int const cols = static_cast<int>(grid[0].size());
 	if (cols == 0) return 0;
 
-	// nums ±êÇ©¶àÉÙ¸ö£¬count ×îºóµÄ¶ÀÁ¢Á¬Í¨Óò¸öÊı
+	// nums æ ‡ç­¾å¤šå°‘ä¸ªï¼Œcount æœ€åçš„ç‹¬ç«‹è¿é€šåŸŸä¸ªæ•°
 	int nums = 0, count = 0;
-	// µÚ 0 ¸ö²»ÓÃ£¬±êÇ©Êı¿Ï¶¨²»»á³¬¹ıÒ»°ë
+	// ç¬¬ 0 ä¸ªä¸ç”¨ï¼Œæ ‡ç­¾æ•°è‚¯å®šä¸ä¼šè¶…è¿‡ä¸€åŠ
 	int const szBuffer = (rows * cols) * sizeof(int);
 	int* labels = static_cast<int*>(malloc(szBuffer));
 	int* parents = static_cast<int*>(malloc(szBuffer));
@@ -76,14 +76,14 @@ int numIslands(vector<vector<char>>& grid)
 				L[c] = up;
 			else if (left != 0 && up == 0)
 				L[c] = left;
-			else if (left == up) // ¿ÉÒÔ²»Òª
+			else if (left == up) // å¯ä»¥ä¸è¦
 				L[c] = left;
 			else
 			{
 				int parL = parents[left], parU = parents[up];
 				while (parL != parents[parL]) parL = parents[parL];
 				while (parU != parents[parU]) parU = parents[parU];
-				// ·Ö±ğÄÃ³ö½ÏĞ¡ÖµºÍ½Ï´óÖµ
+				// åˆ†åˆ«æ‹¿å‡ºè¾ƒå°å€¼å’Œè¾ƒå¤§å€¼
 				if (parL > parU) std::swap(parL, parU);
 
 				L[c] = parL;
@@ -92,13 +92,13 @@ int numIslands(vector<vector<char>>& grid)
 		}
 	}
 
-	// ·¢ÏÖ±êÇ©ÊıÁ¿£¬²¢¸üĞÂ¸¸½Úµã¡£±¾Ìâ²»ÓÃ¸üĞÂµÄ
+	// å‘ç°æ ‡ç­¾æ•°é‡ï¼Œå¹¶æ›´æ–°çˆ¶èŠ‚ç‚¹ã€‚æœ¬é¢˜ä¸ç”¨æ›´æ–°çš„
 	for (int i = 1; i <= nums; ++i)
 	{
 		if (parents[i] == i)
 		{
 			++count;
-			parents[i] = count; // ÕâÒ»²½¿ÉÒÔÉ¸Ñ¡µô¿Õ×ÅµÄ±êºÅ£¬±¾Ìâ²»ÓÃ
+			parents[i] = count; // è¿™ä¸€æ­¥å¯ä»¥ç­›é€‰æ‰ç©ºç€çš„æ ‡å·ï¼Œæœ¬é¢˜ä¸ç”¨
 		}
 		else
 		{
@@ -108,7 +108,7 @@ int numIslands(vector<vector<char>>& grid)
 		}
 	}
 
-	// ¸üĞÂ±êÇ©Í¼¡£±¾Ìâ²»ÓÃ¸üĞÂµÄ
+	// æ›´æ–°æ ‡ç­¾å›¾ã€‚æœ¬é¢˜ä¸ç”¨æ›´æ–°çš„
 	for (int c = rows * cols; c--;)
 		labels[c] = parents[labels[c]];
 

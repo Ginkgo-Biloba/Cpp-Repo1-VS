@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+ï»¿#include "../srcOld/utility.hpp"
 
 class Solution
 {
@@ -63,15 +63,15 @@ protected:
 		if (!(p->word.empty()))
 		{
 			ans.push_back(p->word);
-			p->word.clear(); // É¾³ý£¬²»ÓÃ¿¼ÂÇ words ÓÐÖØ¸´µÄÇé¿ö
+			p->word.clear(); // åˆ é™¤ï¼Œä¸ç”¨è€ƒè™‘ words æœ‰é‡å¤çš„æƒ…å†µ
 		}
 
-		board[r][c] = '#'; // Ö±½ÓÐÞ¸Ä£¬²»ÓÃ±ê¼ÇÊÇ·ñ·ÃÎÊ¹ý£¬Ê¡ÄÚ´æ¼ÓËÙ
+		board[r][c] = '#'; // ç›´æŽ¥ä¿®æ”¹ï¼Œä¸ç”¨æ ‡è®°æ˜¯å¦è®¿é—®è¿‡ï¼Œçœå†…å­˜åŠ é€Ÿ
 		if (r > 0) dfs(board, r - 1u, c, p, ans);
 		if (c > 0) dfs(board, r, c - 1u, p, ans);
 		if (r + 1u < board.size()) dfs(board, r + 1u, c, p, ans);
 		if (c + 1u < board[0].size()) dfs(board, r, c + 1u, p, ans);
-		board[r][c] = ch; // »Ö¸´ÏÖ³¡
+		board[r][c] = ch; // æ¢å¤çŽ°åœº
 	}
 
 public:

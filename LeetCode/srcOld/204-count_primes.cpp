@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
 
 bool isPrime(vector<int> const& primes, int n)

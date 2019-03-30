@@ -1,4 +1,4 @@
-#include "../src/utility.hpp"
+﻿#include "../srcOld/utility.hpp"
 
 /* isomorphic 同构 */
 bool isIsomorphic(string const& src, string const& dst)

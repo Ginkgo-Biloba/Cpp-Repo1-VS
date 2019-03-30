@@ -1,5 +1,5 @@
-#ifndef LEETCODE_UTILITY_HPP
-#define LEETCODE_UTILITY_HPP
+﻿#ifndef LeetCode_Utility_Hpp
+#define LeetCode_Utility_Hpp
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
@@ -26,6 +26,8 @@ using std::string;
 using std::pair;
 using std::unordered_set; using std::unordered_map;
 
+
+static char const* boolstr[2] = { "false", "true" };
 
 #define OutExpr(expr, fmt) \
 	printf(#expr " = " fmt "\n", (expr))
