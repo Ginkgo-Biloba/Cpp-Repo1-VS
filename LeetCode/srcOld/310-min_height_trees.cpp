@@ -12,29 +12,29 @@ class Solution
 {
 public:
 	vector<vector<int>> nghs;
-	vector<int> heights, parents, q;
+	vector<int> hist, parents, q;
 	int npt, hmax, idxmax;
 
 	void dfs(int start)
 	{
-		std::fill(heights.begin(), heights.end(), INT_MAX);
+		std::fill(hist.begin(), hist.end(), INT_MAX);
 		std::fill(parents.begin(), parents.end(), -1);
 		q.clear();
 		q.push_back(start);
-		heights[start] = 0; parents[start] = start;
+		hist[start] = 0; parents[start] = start;
 		hmax = 0;
 
 		for (size_t i = 0; i < q.size(); ++i)
 		{
 			start = q[i];
-			int hcur = heights[start];
+			int hcur = hist[start];
 			hmax = std::max(hcur, hmax);
 			for (int next : nghs[start])
-				if (hcur + 1 < heights[next])
+				if (hcur + 1 < hist[next])
 				{
 					q.push_back(next);
 					parents[next] = start;
-					heights[next] = hcur + 1;
+					hist[next] = hcur + 1;
 				}
 		}
 	}
@@ -47,7 +47,7 @@ public:
 		if (npt == 2) { imid.push_back(0); imid.push_back(1); return imid; }
 
 		nghs.clear(); nghs.resize(npt);
-		heights.resize(npt);
+		hist.resize(npt);
 		parents.resize(npt);
 		q.clear(); q.reserve(npt);
 
@@ -62,7 +62,7 @@ public:
 		dfs(0);
 		idxmax = -1;
 		for (int n = 0; n < npt; ++n)
-			if (heights[n] == hmax)
+			if (hist[n] == hmax)
 			{
 				idxmax = n;
 				break;
@@ -71,7 +71,7 @@ public:
 		dfs(idxmax);
 		idxmax = -1;
 		for (int n = 0; n < npt; ++n)
-			if (heights[n] == hmax)
+			if (hist[n] == hmax)
 			{
 				idxmax = n;
 				break;

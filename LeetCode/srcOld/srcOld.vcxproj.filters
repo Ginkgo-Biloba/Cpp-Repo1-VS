@@ -21,6 +21,9 @@
     <Filter Include="301-400">
       <UniqueIdentifier>{068922b8-548c-49f6-892b-2948c2fa6e1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="401-500">
+      <UniqueIdentifier>{4674f214-04b5-4caa-ab3f-bd7dd01896e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -514,6 +517,93 @@
     </ClCompile>
     <ClCompile Include="327-count_range_sum.cpp">
       <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="336-palindrome_pairs.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="337-house_robber_3.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="338-count_bits.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="343-integer_break.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="352-disjoint_intervals.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="354-russian_doll_envelopes.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="357-nums_with_unique_digits.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="363-max_sum_no_larger_k.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="365-water_jug_problem.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="372-superpow.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="373-k_samllest_sum.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="375-guess_num_2.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="376-wiggle_subseq.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="386-lexicoal_order_num.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="387-first_unique_char.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="389-find_diff_char.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="390-elimination_game.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="377-combination_num_4.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="378-kth_small_elem_in_sorted_matrix.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="383-ransom_note.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="384-shuffle_an_array.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="392-is_subsequence.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="394-decode_string.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="395-longest_substr_least_k_rep_char.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="396-rotate_func.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="400-nth_digit.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="397-int_replacement.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="398-random_pick_idx.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="401-binary_watch.cpp">
+      <Filter>401-500</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

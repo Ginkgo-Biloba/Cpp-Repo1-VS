@@ -28,7 +28,6 @@ bool isLongPressedName(string const& name, string const& typed)
 }
 
 
-/* 这句注释只是为了防止纯 ANSCI 字符时 VS 改变文件编码 */
 int main()
 {
 	vector<int> nums = { 3, 3, 1, 3 };

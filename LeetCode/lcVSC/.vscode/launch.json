@@ -4,29 +4,23 @@
 	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
+	{
+		"name": "Python: Terminal (integrated)",
+		"type": "python",
+		"request": "launch",
+		"program": "${file}",
+		"console": "integratedTerminal"
+	},
 		{
 			"name": "(Windows) Launch",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/lcvsc.exe",
+			"program": "lcvsc.exe",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",
 			"environment": [],
-			"externalConsole": false,
-		}
-		
-		{
-			"name": "(Windows) Build & Launch",
-			"preLaunchTask": "ComplieAndLink",
-			"type": "cppvsdbg",
-			"request": "launch",
-			"program": "${workspaceFolder}/lcvsc.exe",
-			"args": [],
-			"stopAtEntry": false,
-			"cwd": "${workspaceFolder}",
-			"environment": [],
-			"externalConsole": false,
+			"externalConsole": false
 		}
 	]
 }

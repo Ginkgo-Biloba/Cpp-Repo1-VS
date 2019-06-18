@@ -11,8 +11,10 @@ int lengthOfLIS(vector<int>& nums)
 	{
 		int val = nums[i];
 		vector<int>::iterator it = std::lower_bound(res.begin(), res.end(), val);
-		if (it == res.end()) res.push_back(val);
-		else *it = val;
+		if (it == res.end())
+			res.push_back(val);
+		else
+			*it = val;
 	}
 
 	return static_cast<int>(res.size());
