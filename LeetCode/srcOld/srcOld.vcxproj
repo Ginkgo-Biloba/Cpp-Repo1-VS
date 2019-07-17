@@ -372,6 +372,10 @@
     <ClCompile Include="398-random_pick_idx.cpp" />
     <ClCompile Include="400-nth_digit.cpp" />
     <ClCompile Include="401-binary_watch.cpp" />
+    <ClCompile Include="402-remove_k_digits.cpp" />
+    <ClCompile Include="403-frog_jump.cpp" />
+    <ClCompile Include="404-sum_of_left_leaves.cpp" />
+    <ClCompile Include="405-num2hex.cpp" />
     <ClCompile Include="483-smallest_base.cpp" />
     <ClCompile Include="639-decode_ways_2.cpp" />
     <ClCompile Include="887-super_egg_drop.cpp" />

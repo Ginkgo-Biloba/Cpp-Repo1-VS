@@ -347,7 +347,6 @@
     <ClCompile Include="213-house_robber_2.cpp">
       <Filter>201-300</Filter>
     </ClCompile>
-    <ClCompile Include="483-smallest_base.cpp" />
     <ClCompile Include="639-decode_ways_2.cpp" />
     <ClCompile Include="887-super_egg_drop.cpp" />
     <ClCompile Include="891-sum_of_subset.cpp" />
@@ -603,6 +602,21 @@
       <Filter>301-400</Filter>
     </ClCompile>
     <ClCompile Include="401-binary_watch.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="483-smallest_base.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="402-remove_k_digits.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="403-frog_jump.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="404-sum_of_left_leaves.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="405-num2hex.cpp">
       <Filter>401-500</Filter>
     </ClCompile>
   </ItemGroup>

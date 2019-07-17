@@ -2,6 +2,7 @@
 
 string toHex(int num)
 {
+	std::function<void(int)> fptr;
 	unsigned n = num;
 	if (n == 0)
 		return string("0");

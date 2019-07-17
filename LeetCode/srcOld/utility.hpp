@@ -29,8 +29,7 @@ using std::unordered_set; using std::unordered_map;
 
 static char const* boolstr[2] = { "false", "true" };
 
-#define OutExpr(expr, fmt) \
-	printf(#expr " = " fmt "\n", (expr))
+#define OutExpr(expr, fmt) printf(#expr " = " fmt "\n", (expr))
 	
 
 void output(vector<int> const& vec, char const* info = nullptr)
