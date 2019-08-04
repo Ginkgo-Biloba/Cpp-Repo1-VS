@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 int core(vector<int>& hs, int n)
 {

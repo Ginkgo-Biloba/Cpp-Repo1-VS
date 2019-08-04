@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /** 除了一个数出现一次，其他的都出现 3 次 */
 int singleNumber(vector<int>& nums)

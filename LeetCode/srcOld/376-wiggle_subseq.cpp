@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 376. 摆动序列
 

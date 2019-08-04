@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 386. 字典序排数
 

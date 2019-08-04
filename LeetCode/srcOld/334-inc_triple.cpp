@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 334. 递增的三元子序列
 

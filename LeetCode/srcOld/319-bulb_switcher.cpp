@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 319. 灯泡开关
  * 初始时有 n 个灯泡关闭。 

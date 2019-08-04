@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /** House Robber II
  * 第一个和最后一个房子挨着，是个环 */

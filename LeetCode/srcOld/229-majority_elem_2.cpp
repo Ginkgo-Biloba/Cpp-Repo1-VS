@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /*
 思路：摩尔投票升级版，超过n/3的数最多只能有两个；

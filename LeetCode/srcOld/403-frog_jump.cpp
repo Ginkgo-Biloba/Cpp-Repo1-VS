@@ -1,5 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
-#include <amp.h>
+﻿#include "leetcode.hpp"
 
 /* 403. 青蛙过河
 

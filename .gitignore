@@ -33,6 +33,7 @@ x64_[Rr]elease/
 # Visual Studio 2015 cache/options directory
 .vs/
 # Visual Studio Code cache/options directory
+.vscode/ipch/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

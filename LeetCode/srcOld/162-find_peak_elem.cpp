@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /** 假定 nums[-1] = nums[n] = -\infinify */
 int findPeakElement(vector<int>& nums)

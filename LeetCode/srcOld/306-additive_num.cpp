@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 累加数是一个字符串，组成它的数字可以形成累加序列。
  * 一个有效的累加序列必须至少包含 3 个数。

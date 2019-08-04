@@ -1,0 +1,16 @@
+---
+Language:      Cpp
+BasedOnStyle:  WebKit
+
+IndentWidth : 2
+ContinuationIndentWidth : 2
+TabWidth : 2
+UseTab : Always
+
+BreakBeforeBraces : Allman
+
+MaxEmptyLinesToKeep : 2
+KeepEmptyLinesAtTheStartOfBlocks : false
+NamespaceIndentation : None
+
+...

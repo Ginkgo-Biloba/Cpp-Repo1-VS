@@ -1,5 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
-#include <amp.h>
+﻿#include "leetcode.hpp"
 
 /* 400. 第N个数字
 

@@ -1,5 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
-#include <amp.h>
+﻿#include "leetcode.hpp"
 
 /* 402. 移掉K位数字
 

@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <!--ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration-->
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -29,20 +21,11 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{67D92184-C831-4BBA-9F25-2268FF92A542}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>srcOld</RootNamespace>
+    <RootNamespace>SrcOld</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>SrcOld</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <!--PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>    
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
-  </PropertyGroup-->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -74,12 +57,6 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-  <!--ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup-->
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -376,6 +353,18 @@
     <ClCompile Include="403-frog_jump.cpp" />
     <ClCompile Include="404-sum_of_left_leaves.cpp" />
     <ClCompile Include="405-num2hex.cpp" />
+    <ClCompile Include="406-queue_recon_by_height.cpp" />
+    <ClCompile Include="407-trap_rain_water.cpp" />
+    <ClCompile Include="409-longest_palindrome.cpp" />
+    <ClCompile Include="410-split_array_large_sum.cpp" />
+    <ClCompile Include="412-fizz_buzz.cpp" />
+    <ClCompile Include="413-arithmetic_slices.cpp" />
+    <ClCompile Include="414-third_max_num.cpp" />
+    <ClCompile Include="415-add_string.cpp" />
+    <ClCompile Include="416-part_equal_subset_sum.cpp" />
+    <ClCompile Include="419-battleships_in_board.cpp" />
+    <ClCompile Include="421-max_xor_num.cpp" />
+    <ClCompile Include="423-recon_digit_from_en.cpp" />
     <ClCompile Include="483-smallest_base.cpp" />
     <ClCompile Include="639-decode_ways_2.cpp" />
     <ClCompile Include="887-super_egg_drop.cpp" />
@@ -387,7 +376,7 @@
     <ClCompile Include="960-del_col_make_sorted.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="utility.hpp" />
+    <ClInclude Include="leetcode.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

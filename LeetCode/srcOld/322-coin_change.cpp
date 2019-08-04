@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 322. 零钱兑换
  * 给定不同面额的硬币 coins 和一个总金额 amount。

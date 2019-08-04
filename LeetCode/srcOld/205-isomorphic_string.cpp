@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* isomorphic 同构 */
 bool isIsomorphic(string const& src, string const& dst)

@@ -619,9 +619,45 @@
     <ClCompile Include="405-num2hex.cpp">
       <Filter>401-500</Filter>
     </ClCompile>
+    <ClCompile Include="406-queue_recon_by_height.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="407-trap_rain_water.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="409-longest_palindrome.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="410-split_array_large_sum.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="412-fizz_buzz.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="413-arithmetic_slices.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="414-third_max_num.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="415-add_string.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="416-part_equal_subset_sum.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="419-battleships_in_board.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="421-max_xor_num.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="423-recon_digit_from_en.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="utility.hpp">
+    <ClInclude Include="leetcode.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

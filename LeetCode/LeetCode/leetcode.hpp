@@ -1,5 +1,4 @@
-﻿#ifndef LeetCode_Utility_Hpp
-#define LeetCode_Utility_Hpp
+﻿#pragma once
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
@@ -19,15 +18,14 @@
 #include <map>
 #include <unordered_set>
 #include <unordered_map>
-#include <fstream>
 #include <queue>
 using std::vector;
 using std::string;
 using std::pair;
-using std::unordered_set; using std::unordered_map;
+using std::unordered_set;
+using std::unordered_map;
 
-
-static char const* boolstr[2] = { "false", "true" };
+char const* boolstr[2] = { "false", "true" };
 
 #define OutExpr(expr, fmt) printf(#expr " = " fmt "\n", (expr))
 	
@@ -59,5 +57,3 @@ void output(vector<string> const& vec, \
 	printf("\n");
 }
 
-
-#endif

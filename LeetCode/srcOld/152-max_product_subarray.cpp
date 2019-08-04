@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /** 考虑到负负得正，与求和相比，需要记住一个最小值 */
 int maxProduct(vector<int> const& nums)

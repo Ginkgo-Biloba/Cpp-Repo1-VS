@@ -1,4 +1,5 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
+#include <random>
 
 /* 384. 打乱数组
 

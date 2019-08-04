@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 316. 去除重复字母
  * 给定一个仅包含小写字母的字符串，去除字符串中重复的字母，使得每个字母只出现一次。

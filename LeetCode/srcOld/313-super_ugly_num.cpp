@@ -1,4 +1,4 @@
-﻿#include "../srcOld/utility.hpp"
+﻿#include "leetcode.hpp"
 
 /* 313. Super Ugly Number
  * Write a program to find the nth super ugly number.
