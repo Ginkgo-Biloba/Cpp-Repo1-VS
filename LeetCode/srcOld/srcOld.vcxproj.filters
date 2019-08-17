@@ -655,6 +655,45 @@
     <ClCompile Include="423-recon_digit_from_en.cpp">
       <Filter>401-500</Filter>
     </ClCompile>
+    <ClCompile Include="424-long_rep_char_replace.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="429-n_ary_level_travel.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="434-num_of_seg_in_str.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="435-non_overlap_intervals.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="436-find_right_interval.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="438-find_anagram_in_str.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="440-kth_lexical_num.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="441-arrange_coins.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="442-find_all_duplicates.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="446-arithmetic_subseq.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="448-find_all_disappeared.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="451-sort_char_by_freq.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="452-min_arrow_burst_balloon.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">

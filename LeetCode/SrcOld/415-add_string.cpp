@@ -49,6 +49,5 @@ string addStrings(string const& A, string const& B)
 
 int main()
 {
-	vector<int> nums = { 1, 2, INT_MIN };
 	OutExpr(addStrings("5", "408").c_str(), "%s");
 }
