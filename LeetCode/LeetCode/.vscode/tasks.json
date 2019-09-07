@@ -14,6 +14,7 @@
 				"-pedantic",
 				"-Werror=return-type",
 				"-g",
+				"-Og",
 				"-o",
 				"${workspaceFolder}\\${fileBasenameNoExtension}.exe",
 				"${file}"

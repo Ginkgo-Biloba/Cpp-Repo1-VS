@@ -24,6 +24,9 @@
     <Filter Include="401-500">
       <UniqueIdentifier>{4674f214-04b5-4caa-ab3f-bd7dd01896e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="501-600">
+      <UniqueIdentifier>{9f69a7de-f23d-4208-9d21-43bd2dc67319}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -693,6 +696,150 @@
     </ClCompile>
     <ClCompile Include="452-min_arrow_burst_balloon.cpp">
       <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="453-min_move_to_equal.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="454-assign_cookies.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="456-132_pattern.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="457-circular_array_loop.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="458-poor_pigs.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="459-rep_substr_pattern.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="461-hamming_distance.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="462-min_move_to_euqal_2.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="463-island_perimeter.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="464-can_I_win.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="467-unique_sub_in_wrap_str.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="473-matchsticks.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="474-ones_and_zeroes.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="475-heaters.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="476-num_complement.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="477-total_hamming_dist.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="478-rand_point_in_circle.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="481-magical_string.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="482-license_key_format.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="485-max_cont_ones.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="486-predict_the_winner.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="491-increasing_seq.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="492-construct_the_rect.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="493-reverse_pairs.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="494-target_sum.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="495-teemo_attacking.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="496-next_greater_elem_1.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="497-radom_pt_in_rects.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="498-diag_traverse.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="500-keyboard_row.cpp">
+      <Filter>401-500</Filter>
+    </ClCompile>
+    <ClCompile Include="502-ipo.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="503-next_greater_elem_2.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="504-base_7.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="506-relative_ranks.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="507-prefect_num.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="509-fibonacci.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="516-longest_palindromic_subseq.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="517-super_washing_machines.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="518-coin_change_2.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="519-random_flip_matrix.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="520-detect_capital.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="523-cont_subarray_sum.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="525-contiguous_array.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="526-beautiful_arrangement.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="528-random_pick_weight.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="532-k_diff_pairs.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="540-single_elem_in_sorted_array.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="551-student_attendance_1.cpp">
+      <Filter>501-600</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

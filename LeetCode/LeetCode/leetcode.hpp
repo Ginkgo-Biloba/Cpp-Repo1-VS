@@ -4,15 +4,19 @@
 #include <algorithm>
 #include <cctype>
 #include <cfloat>
+#include <chrono>
 #include <climits>
 #include <cmath>
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <ctime>
 #include <functional>
 #include <map>
+#include <memory>
 #include <queue>
+#include <random>
 #include <set>
 #include <string>
 #include <unordered_map>
@@ -20,7 +24,9 @@
 #include <utility>
 #include <vector>
 using std::pair;
+using std::priority_queue;
 using std::string;
+using std::unique_ptr;
 using std::unordered_map;
 using std::unordered_set;
 using std::vector;
@@ -28,7 +34,7 @@ using std::vector;
 char const* boolstr[2] = { "false", "true" };
 
 #define OutExpr(expr, fmt) \
-	printf(#expr " = " fmt "\n", (expr))
+	printf(#expr " = " fmt "\n", expr)
 
 
 void output(vector<int> const& vec, char const* info = nullptr)
