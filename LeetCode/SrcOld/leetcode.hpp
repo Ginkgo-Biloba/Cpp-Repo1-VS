@@ -2,6 +2,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <algorithm>
+#include <cassert>
 #include <cctype>
 #include <cfloat>
 #include <chrono>

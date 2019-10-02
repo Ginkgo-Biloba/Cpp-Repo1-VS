@@ -27,6 +27,9 @@
     <Filter Include="501-600">
       <UniqueIdentifier>{9f69a7de-f23d-4208-9d21-43bd2dc67319}</UniqueIdentifier>
     </Filter>
+    <Filter Include="601-700">
+      <UniqueIdentifier>{ba7c612e-35ba-43ae-870b-1a8e2cc73bd6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -350,7 +353,6 @@
     <ClCompile Include="213-house_robber_2.cpp">
       <Filter>201-300</Filter>
     </ClCompile>
-    <ClCompile Include="639-decode_ways_2.cpp" />
     <ClCompile Include="887-super_egg_drop.cpp" />
     <ClCompile Include="891-sum_of_subset.cpp" />
     <ClCompile Include="895-max_freq_stack.cpp" />
@@ -840,6 +842,135 @@
     </ClCompile>
     <ClCompile Include="551-student_attendance_1.cpp">
       <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="552-student_attendance_2.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="553-optimal_division.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="556-next_greater_elem_3.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="557-reverse_words_in_string_3.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="560-subarray_sum_equal_k.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="561-array_partition_1.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="564-closest_palindrome.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="565-array_nesting.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="567-permutation_in_string.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="581-shortest_unsorted_cont_subary.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="582-del_op_for_2_string.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="307-range_sum_query.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="593-valid_square.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="600-non_neg_int_without_cont_1.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="594-long_harmonious_subseq.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="587-erect_the_fence.cpp">
+      <Filter>501-600</Filter>
+    </ClCompile>
+    <ClCompile Include="639-decode_ways_2.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="605-can_place_flower.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="611-valid_triangle_number.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="621-task_scheduler.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="622-design_circular_queue.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="628-max_product_3_num.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="629-k_inverse_pairs_array.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="630-course_schedule_3.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="632-small_range_cover_k_lists.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="633-sum_of_square_num.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="636-exclusive_time_of_func.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="638-shopping_offers.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="641-design_circular_deque.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="643-max_average_subary_1.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="645-set_mismatch.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="646-max_len_of_pair_chain.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="647-palindromic_substrings.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="649-dota2_senate.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="650-2_keys_keyboard.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="657-robot_return_to_origin.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="658-find_k_closet_elem.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="659-split_array_cons_subseq.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="664-strange_printer.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="665-non_decreasing_array.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="667-beautiful_arrangement_2.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="668-kth_smallest_in_mul_tab.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="670-maximum_swap.cpp">
+      <Filter>601-700</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

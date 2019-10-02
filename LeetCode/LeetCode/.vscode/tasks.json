@@ -12,12 +12,16 @@
 				"-Wall",
 				"-Wextra",
 				"-pedantic",
-				"-Werror=return-type",
+				"-Wconversion",
+				"-Wcast-align",
+				"-Wformat-nonliteral",
+				"-Wpointer-arith",
+				"-Wshadow",
+				"-Werror",
 				"-g",
-				"-Og",
 				"-o",
-				"${workspaceFolder}\\${fileBasenameNoExtension}.exe",
-				"${file}"
+				"${fileBasenameNoExtension}.exe",
+				"${fileBasename}"
 			],
 			"group": {
 				"kind": "build",
