@@ -37,7 +37,7 @@ int main()
 	for (int i = 0; i < len; i++)
 	{
 		printf("K = %3d, N = %3d, ", KS[i], NS[i]);
-		printf("F=%3d\n", superEggDrop(KS[i], NS[i]));
+		printf("F = %3d\n", superEggDrop(KS[i], NS[i]));
 	}
 	return 0;
 }

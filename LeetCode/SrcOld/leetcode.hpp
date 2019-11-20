@@ -37,6 +37,8 @@ char const* boolstr[2] = { "false", "true" };
 #define OutExpr(expr, fmt) \
 	printf(#expr " = " fmt "\n", expr)
 
+#define OutBool(expr) \
+	printf(#expr " = %s\n", boolstr[!!(expr)]);
 
 void output(vector<int> const& vec, char const* info = nullptr)
 {

@@ -24,6 +24,7 @@ bld/
 [Oo]bj/
 
 # Add on 01-03 11:25
+*.exe
 backup/
 x86_[Dd]ebug/
 x86_[Rr]elease/

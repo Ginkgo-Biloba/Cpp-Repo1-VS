@@ -1,64 +1,39 @@
 ﻿#include "leetcode.hpp"
 
-/* 670. 最大交换
+/* 801. 使序列递增的最小交换次数
 
-给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
+我们有两个长度相等且不为空的整型数组 A 和 B 。
 
-示例 1 :
-输入: 2736
-输出: 7236
-解释: 交换数字2和数字7。
+我们可以交换 A[i] 和 B[i] 的元素。
+注意这两个元素在各自的序列中应该处于相同的位置。
 
-示例 2 :
-输入: 9973
-输出: 9973
-解释: 不需要交换。
+在交换过一些元素之后，数组 A 和 B 都应该是严格递增的.
+数组严格递增的条件仅为A[0] < A[1] < A[2] < ... < A[A.length - 1]。
+
+给定数组 A 和 B，请返回使得两个数组均保持严格递增状态的最小交换次数。
+假设给定的输入总是有效的。
+
+示例:
+输入: A = [1,3,5,4], B = [1,2,3,7]
+输出: 1
+解释:
+交换 A[3] 和 B[3] 后，两个数组如下:
+A = [1, 3, 5, 7] ， B = [1, 2, 3, 4]
+两个数组均为严格递增的。
 
 注意:
-	给定数字的范围是 [0, 108]
+	A, B 两个数组的长度总是相等的，且长度的范围为 [1, 1000]。
+	A[i], B[i] 均为 [0, 2000]区间内的整数。
 */
 
-
-int maximumSwap(int num)
-{
-	int last[10], bits[10];
-	int left = 10, right = 10;
-	int n = num;
-	memset(last, 0xff, sizeof(last));
-	while (n)
-	{
-		int b = n % 10;
-		--left;
-		bits[left] = b;
-		if (last[b] == -1)
-			last[b] = left;
-		n /= 10;
-	}
-	for (int i = left; i < right; ++i)
-		for (int b = 9; b > bits[i]; --b)
-			if (last[b] > i)
-			{
-				std::swap(bits[i], bits[last[b]]);
-				i = right;
-				break;
-			}
-	n = 0;
-	for (int i = left; i < right; ++i)
-	{
-		n *= 10;
-		n += bits[i];
-	}
-	return n;
-}
+int minSwap(vector<int>& A, vector<int>& B)
+{}
 
 
 int main()
 {
-	OutExpr(maximumSwap(2736), "%d");
-	OutExpr(maximumSwap(9973), "%d");
-	OutExpr(maximumSwap(9879), "%d");
-	OutExpr(maximumSwap(99167), "%d");
-	OutExpr(maximumSwap(0), "%d");
-	OutExpr(maximumSwap(10), "%d");
-	OutExpr(maximumSwap(999), "%d");
+	vector<int>
+		A0 = { 1, 3, 5, 4 },
+		B0 = { 1, 2, 3, 4 };
+	OutExpr(minSwap(A0, B0), "%d");
 }

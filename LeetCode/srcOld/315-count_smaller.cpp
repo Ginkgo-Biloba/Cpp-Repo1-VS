@@ -1,12 +1,21 @@
 ﻿#include "leetcode.hpp"
 
-/* 316. 去除重复字母
- * 给定一个仅包含小写字母的字符串，去除字符串中重复的字母，使得每个字母只出现一次。
- * 需保证返回结果的字典序最小（要求不能打乱其他字符的相对位置）。
- */
+/* 315. 计算右侧小于当前元素的个数
 
- // https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/138154/The-C%2B%2B-merge-sort-template-for-pairs-'i'-'j'-problem
- // 抄的
+给定一个整数数组 nums，按要求返回一个新数组 counts。数组 counts 有该性质： counts[i] 的值是  nums[i] 右侧小于 nums[i] 的元素的数量。
+
+示例:
+输入: [5,2,6,1]
+输出: [2,1,1,0] 
+解释:
+5 的右侧有 2 个更小的元素 (2 和 1).
+2 的右侧仅有 1 个更小的元素 (1).
+6 的右侧有 1 个更小的元素 (1).
+1 的右侧有 0 个更小的元素.
+*/
+
+// https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/138154/The-C%2B%2B-merge-sort-template-for-pairs-'i'-'j'-problem
+// 抄的
 typedef vector<pair<int, int>>::iterator iterator;
 
 void sortCount(iterator left, iterator right, vector<int>& count)

@@ -9,9 +9,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="001-100">
-      <UniqueIdentifier>{371da3b3-3fe0-4293-8477-d3563a0f9918}</UniqueIdentifier>
-    </Filter>
     <Filter Include="101-200">
       <UniqueIdentifier>{f798b748-2603-4ec3-985a-c406854788cb}</UniqueIdentifier>
     </Filter>
@@ -29,6 +26,15 @@
     </Filter>
     <Filter Include="601-700">
       <UniqueIdentifier>{ba7c612e-35ba-43ae-870b-1a8e2cc73bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="701-800">
+      <UniqueIdentifier>{17ccae86-c2ce-41b9-9802-3032b54f5572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="001-100">
+      <UniqueIdentifier>{371da3b3-3fe0-4293-8477-d3563a0f9918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="801-900">
+      <UniqueIdentifier>{afcf9d2f-9dc4-4ab9-9701-ec02c1fa2def}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -971,6 +977,267 @@
     </ClCompile>
     <ClCompile Include="670-maximum_swap.cpp">
       <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="672-bulb_switcher_2.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="673-num_of_LIS.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="674-long_cont_inc_subseq.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="675-cut_off_trees.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="676-magic_dictionary.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="677-map_sum_pairs.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="678-valid_parenthesis_string.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="679-24_game.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="680-valid_palindrome_2.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="682-baseball_game.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="684-redundant_connection.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="685-redundant_connection_2.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="686-repeated_string_match.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="689-max_sum_3_sub_array.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="690-employee_importance.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="691-stickers_to_spell_word.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="692-top_k_frequent_words.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="693-binary_num_alt_bit.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="695-max_area_of_island.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="696-count_binary_substr.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="698-k_equal_sum_subset.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="700-search_in_bst.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="218-skyline_problem.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="736-parse_lisp_expr.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="703-kth_largest_elem.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="704-binary_search.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="710-random_with_blacklist.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="712-min_ascii_delete.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="713-subarray_product_less_k.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="714-buy_sell_stock_with_fee.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="715-range_module.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="717-1bit_2bit_characters.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="718-max_len_of_rep_subarray.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="719-kth_small_pair.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="720-remove_comments.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="724-pivot_index.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="728-self_divide_number.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="730-diff_palindromic_subseq.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="732-my_calendar.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="733-flood_fill.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="735-asteroid_collision.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="738-monotone_increasing_digits.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="739-daily_temperatures.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="740-delete_and_earn.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="741-cherry_pickup.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="743-network_delay_time.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="744-small_letter_target.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="745-prefix_suffix_search.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="746-min_cost_climb_stairs.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="747-largest_num_twice_others.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="748-short_completing_word.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="752-open_the_lock.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="753-cracking_the_safe.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="754-reach_a_number.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="757-set_intersection_two.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="761-spatial_binary_string.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="762-prime_num_set_bits.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="763-partition_labels.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="764-largest_plus_sign.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="765-couples_holding_hands.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="766-toeplitz_matrix.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="767-reorganize_string.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="769-max_chunks_to_make_sorted.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="771-jewels_and_stones.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="775-global_local_inversions.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="777-swap_adj_LR_string.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="778-swim_in_rising_water.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="779-kth_symbol_in_grammar.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="780-reaching_points.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="781-rabbits_in_forest.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="782-transform_to_chessboard.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="784-letter_case_permutation.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="785-is_graph_bipartite.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="786-kth_smallest_prime_frac.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="787-cheapest_flights_k_stops.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="788-rotated_digits.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="789-escape_ghosts.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="790-domino_tromino_tiling.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="791-custom_sort_string.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="792-number_of_match_subseq.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="793-preimage_size_factorial_zeros.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="794-valid_tic_tac_toe.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="795-num_subary_bound_max.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="796-rotate_string.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="797-all_paths_src_to_dst.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="798-small_rotation_high_score.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="799-champagne_tower.cpp">
+      <Filter>701-800</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

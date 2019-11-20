@@ -29,7 +29,7 @@ int lastRemaining(int n)
 	int head = 1;
 	while (rest > 1)
 	{
-		if (left || rest % 2 == 1)
+		if (left || (rest % 2 == 1))
 			head += step;
 		rest /= 2;
 		step *= 2;
