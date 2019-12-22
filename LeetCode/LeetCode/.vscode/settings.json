@@ -59,7 +59,10 @@
 		"typeindex": "cpp",
 		"valarray": "cpp",
 		"random": "cpp",
-		"*.tcc": "cpp"
+		"*.tcc": "cpp",
+		"string": "cpp"
 	},
+	"python.linting.flake8Enabled": true,
+	"python.linting.enabled": true,
 	
 }

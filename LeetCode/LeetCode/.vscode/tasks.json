@@ -18,6 +18,7 @@
 				"-Wpointer-arith",
 				"-Wshadow",
 				"-Werror",
+				// "-fsanitize=undefined",
 				"-g",
 				"-o",
 				"${fileBasenameNoExtension}.exe",

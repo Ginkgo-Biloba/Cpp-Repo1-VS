@@ -2,6 +2,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <algorithm>
+#include <bitset>
 #include <cassert>
 #include <cctype>
 #include <cfloat>
@@ -24,6 +25,9 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+using std::bitset;
+using std::max;
+using std::min;
 using std::pair;
 using std::priority_queue;
 using std::string;
@@ -66,3 +70,4 @@ void output(vector<string> const& vec,
 		printf("%s%s", s.c_str(), delimit);
 	printf("\n");
 }
+
