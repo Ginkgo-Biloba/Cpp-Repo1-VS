@@ -1,8 +1,8 @@
 ﻿#pragma once
 
 #define _CRT_SECURE_NO_WARNINGS
+#include <array>
 #include <algorithm>
-#include <bitset>
 #include <cassert>
 #include <cctype>
 #include <cfloat>
@@ -25,7 +25,8 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
-using std::bitset;
+using std::array;
+using std::deque;
 using std::max;
 using std::min;
 using std::pair;

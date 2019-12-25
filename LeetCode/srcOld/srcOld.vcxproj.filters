@@ -1519,6 +1519,87 @@
     <ClCompile Include="906-super_palindromes.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
+    <ClCompile Include="908-smallest_range_1.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="909-snakes_and_ladders.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="910-smallest_range_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="911-online_election.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="912-sort_an_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="913-cat_and_mouse.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="914-x_of_a_kind_in_deck_cards.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="915-partition_array_disjoint.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="916-word_subsets.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="917-reverse_only_letters.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="918-max_sum_circular_subary.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="920-num_of_music_playlists.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="921-min_add_make_parentheses.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="922-sort_array_by_parity_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="923-3_sum_with_multiplicity.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="924-minimize_malware_spread.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="925-long_pressed_name.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="926-flip_str_monotone_inc.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="927-three_equal_parts.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="928-minimize_malware_spread_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="929-unique_email_addresses.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="930-binary_subarray_sum.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="931-min_falling_path_sum.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="932-beautiful_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="933-num_of_recent_calls.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="934-shortest_bridge.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="935-knight_dialer.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">

@@ -60,7 +60,8 @@
 		"valarray": "cpp",
 		"random": "cpp",
 		"*.tcc": "cpp",
-		"string": "cpp"
+		"string": "cpp",
+		"*.txt": "cpp"
 	},
 	"python.linting.flake8Enabled": true,
 	"python.linting.enabled": true,

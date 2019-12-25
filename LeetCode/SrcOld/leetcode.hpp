@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #define _CRT_SECURE_NO_WARNINGS
+#include <array>
 #include <algorithm>
 #include <cassert>
 #include <cctype>
@@ -24,6 +25,10 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+using std::array;
+using std::deque;
+using std::max;
+using std::min;
 using std::pair;
 using std::priority_queue;
 using std::string;
@@ -66,3 +71,4 @@ void output(vector<string> const& vec,
 		printf("%s%s", s.c_str(), delimit);
 	printf("\n");
 }
+
