@@ -1600,6 +1600,33 @@
     <ClCompile Include="935-knight_dialer.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
+    <ClCompile Include="940-distinct_subseq_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="941-valid_mountain_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="942-di_string_match.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="944-del_cols_make_sorted.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="945-min_inc_make_array_unique.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="946-validate_stack_sequences.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="947-most_stones_removed.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="949-largest_time_digits.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="950-reveal_cards_increasing.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">

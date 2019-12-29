@@ -680,6 +680,15 @@
     <ClCompile Include="933-num_of_recent_calls.cpp" />
     <ClCompile Include="934-shortest_bridge.cpp" />
     <ClCompile Include="935-knight_dialer.cpp" />
+    <ClCompile Include="940-distinct_subseq_2.cpp" />
+    <ClCompile Include="941-valid_mountain_array.cpp" />
+    <ClCompile Include="942-di_string_match.cpp" />
+    <ClCompile Include="944-del_cols_make_sorted.cpp" />
+    <ClCompile Include="945-min_inc_make_array_unique.cpp" />
+    <ClCompile Include="946-validate_stack_sequences.cpp" />
+    <ClCompile Include="947-most_stones_removed.cpp" />
+    <ClCompile Include="949-largest_time_digits.cpp" />
+    <ClCompile Include="950-reveal_cards_increasing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp" />

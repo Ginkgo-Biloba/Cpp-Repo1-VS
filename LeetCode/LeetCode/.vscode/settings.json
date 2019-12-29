@@ -63,7 +63,5 @@
 		"string": "cpp",
 		"*.txt": "cpp"
 	},
-	"python.linting.flake8Enabled": true,
-	"python.linting.enabled": true,
-	
+	"python.pythonPath": "C:\\InstApp\\Miniconda3\\envs\\py35\\python.exe",
 }
