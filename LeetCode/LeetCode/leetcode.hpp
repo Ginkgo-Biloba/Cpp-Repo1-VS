@@ -1,14 +1,15 @@
 ﻿#pragma once
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <array>
 #include <algorithm>
+#include <array>
 #include <cassert>
 #include <cctype>
 #include <cfloat>
 #include <chrono>
 #include <climits>
 #include <cmath>
+#include <complex>
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
@@ -43,10 +44,10 @@ char const* boolstr[2] = { "false", "true" };
 	printf(#expr " = " fmt "\n", expr)
 
 #define OutBool(expr) \
-	printf(#expr " = %s\n", boolstr[!!(expr)]);
+	printf(#expr " = %s\n", boolstr[!!(expr)])
 
 #define OutString(expr) \
-	printf(#expr " = %s\n", (expr).c_str());
+	printf(#expr " = %s\n", (expr).c_str())
 
 void output(vector<int> const& vec, char const* info = nullptr)
 {

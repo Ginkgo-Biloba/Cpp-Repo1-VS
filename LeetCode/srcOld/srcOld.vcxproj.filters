@@ -35,6 +35,9 @@
     <Filter Include="901-1000">
       <UniqueIdentifier>{db20ab7c-8593-411f-9aa1-65722ace5b9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1001-1100">
+      <UniqueIdentifier>{f378d401-b893-4a36-988d-5773cd2b23da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -1627,10 +1630,228 @@
     <ClCompile Include="950-reveal_cards_increasing.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
+    <ClCompile Include="952-largest_size_by_common_factor.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="967-num_with_same_diff.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="966-vowel_spellchecker.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="964-least_ops_express_num.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="963-min_area_rect_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="962-maximum_width_ramp.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="961-n_repeated_in_2n_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="960-delete_cols_make_sorted_3.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="959-regions_cut_by_slashes.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="957-prison_after_n_days.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="956-tallest_billboard.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="955-delete_cols_make_sorted_2.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="954-array_of_doubled_paris.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="953-verify_alien_dict.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="968-binary_tree_cameras.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="989-add_to_array_integer.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="988-small_string_from_leaf.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="986-interval_list_intersections.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="985-sum_of_even_num.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="984-string_without_3a3b.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="983-min_cost_for_tickets.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="982-triple_bitwise_and_0.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="981-time_based_key_value.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="980-unique_path_3.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="979-distribute_coins_in_bt.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="978-longest_turbulent_subarray.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="977-squares_of_sorted_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="976-largest_perimeter_triangle.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="975-odd_even_jump.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="974-subsum_divisible_by_K.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="973-k_close_pt_to_origin.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="972-equal_rational_number.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="970-powerful_integers.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="969-pancake_sort.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="990-satisfiability_of_equations.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="1000-min_cost_to_merge_stone.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="999-available_captures_rook.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="997-find_the_town_judge.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="996-num_of_squareful_array.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="995-min_num_k_bit_flips.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="994-rotting_oranges.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="992-subarray_k_diff_integers.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="991-broken_calculator.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="1001-grid_illumination.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1011-capacity_to_ship_packages.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1010-pairs_of_songs_div_by_60.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1009-complement_of_int.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1007-min_domino_rotations.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1006-clumsy_factorial.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1005-max_sum_k_negations.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1004-max_consecutive_ones_3.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1003-check_valid_abc.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1002-find_common_chars.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1012-num_with_rep_digits.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1020-number_of_enclaves.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1019-next_greater_node.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1018-bin_prefix_div_by_5.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1017-convert_to_base_-2.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1016-bin_str_with_substr_1n.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1015-smallest_1s_div_by_K.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1014-best_sightseeing_pair.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1013-part_to_3_eq_sum.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1021-remove_outermost_parentheses.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1029-two_city_scheduling.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1027-longest_arithmetic_seq.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1025-divisor_game.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1024-video_stitching.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1023-camelcase_match.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1030-matrix_in_distance_order.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1032-stream_of_characters.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1031-max_sum_of_2_subarray.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="963-min_area_rect_2.py">
+      <Filter>901-1000</Filter>
+    </None>
   </ItemGroup>
 </Project>

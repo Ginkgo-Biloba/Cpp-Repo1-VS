@@ -3,6 +3,7 @@ import collections
 import itertools
 
 
+# https://leetcode.com/problems/minimum-area-rectangle-ii/discuss/208351/Python-Complex
 class Solution:
 	def minAreaFreeRect(self, points: List[List[int]]) -> float:
 		points.sort()
@@ -11,7 +12,7 @@ class Solution:
 		ans = float("inf")
 		for (P, Q) in itertools.combinations(cpx, 2):
 			seen[(Q - P)].append((Q + P) / 2)
-		for A, cand in seen.items():
+		for (A, cand) in seen.items():
 			for (P, Q) in itertools.combinations(cand, 2):
 				if A.real * (P - Q).real == -A.imag * (P - Q).imag:
 					ans = min(ans, abs(A) * abs(P - Q))
