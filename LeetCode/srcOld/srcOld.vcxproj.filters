@@ -1843,6 +1843,48 @@
     <ClCompile Include="1031-max_sum_of_2_subarray.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
+    <ClCompile Include="1033-move_stones_until_consecutive.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1047-remove_all_adjacent_duplicates.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1046-last_stone_weight.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1044-longest_duplicate_substr.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1043-partition_array_max_sum.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1042-flower_no_adjacent.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1041-robot_bounded_in_circle.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1040-move_stone_until_consecutive_2.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1039-triangulation_of_polygon.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1037-valid_boomerang.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1036-escape_a_large_maze.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1035-uncrossed_lines.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1048-longest_string_chain.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1049-last_stone_weight_2.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">

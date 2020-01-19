@@ -20,9 +20,9 @@
 				"-Werror",
 				// "-fsanitize=undefined",
 				"-g",
+				"${fileBasename}",
 				"-o",
 				"${fileBasenameNoExtension}.exe",
-				"${fileBasename}"
 			],
 			"group": {
 				"kind": "build",
