@@ -282,6 +282,14 @@
     <ClCompile Include="1047-remove_all_adjacent_duplicates.cpp" />
     <ClCompile Include="1048-longest_string_chain.cpp" />
     <ClCompile Include="1049-last_stone_weight_2.cpp" />
+    <ClCompile Include="1051-height_checker.cpp" />
+    <ClCompile Include="1052-grumpy_bookstore_owner.cpp" />
+    <ClCompile Include="1053-prev_perm_with_one_swap.cpp" />
+    <ClCompile Include="1054-distant_barcodes.cpp" />
+    <ClCompile Include="1071-gcd_of_string.cpp" />
+    <ClCompile Include="1072-flip_columns_for_max_equal_rows.cpp" />
+    <ClCompile Include="1073-add_two_negabinary_num.cpp" />
+    <ClCompile Include="1074-submatrices_sum_to_target.cpp" />
     <ClCompile Include="115-distinct_subseq.cpp" />
     <ClCompile Include="119-pascal_triangle.cpp" />
     <ClCompile Include="121-buy_sell_stock.cpp" />

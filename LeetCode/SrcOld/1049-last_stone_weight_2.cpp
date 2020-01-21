@@ -29,7 +29,7 @@
 // 抄的
 int lastStoneWeightII(vector<int>& stones)
 {
-	char dp[1051] = { 0 };
+	char dp[1501] = { 0 };
 	int sum = 0;
 	dp[0] = 1;
 	for (int s : stones)

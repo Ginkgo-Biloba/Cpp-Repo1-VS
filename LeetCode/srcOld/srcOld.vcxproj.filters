@@ -1885,6 +1885,30 @@
     <ClCompile Include="1049-last_stone_weight_2.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
+    <ClCompile Include="1051-height_checker.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1074-submatrices_sum_to_target.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1073-add_two_negabinary_num.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1072-flip_columns_for_max_equal_rows.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1071-gcd_of_string.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1054-distant_barcodes.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1053-prev_perm_with_one_swap.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1052-grumpy_bookstore_owner.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
