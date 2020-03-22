@@ -38,6 +38,9 @@
     <Filter Include="1001-1100">
       <UniqueIdentifier>{f378d401-b893-4a36-988d-5773cd2b23da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1101-1200">
+      <UniqueIdentifier>{175f45cf-70fe-4d09-990b-5c96d3e8020d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -172,13 +175,7 @@
     <ClCompile Include="044-wildcard_matching.cpp">
       <Filter>001-100</Filter>
     </ClCompile>
-    <ClCompile Include="045-jump_game2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
     <ClCompile Include="046-permutations.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="047-permutations2.cpp">
       <Filter>001-100</Filter>
     </ClCompile>
     <ClCompile Include="048-rotate_image.cpp">
@@ -967,9 +964,6 @@
     <ClCompile Include="668-kth_smallest_in_mul_tab.cpp">
       <Filter>601-700</Filter>
     </ClCompile>
-    <ClCompile Include="670-maximum_swap.cpp">
-      <Filter>601-700</Filter>
-    </ClCompile>
     <ClCompile Include="672-bulb_switcher_2.cpp">
       <Filter>601-700</Filter>
     </ClCompile>
@@ -1645,9 +1639,6 @@
     <ClCompile Include="963-min_area_rect_2.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
-    <ClCompile Include="962-maximum_width_ramp.cpp">
-      <Filter>901-1000</Filter>
-    </ClCompile>
     <ClCompile Include="961-n_repeated_in_2n_array.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
@@ -1894,9 +1885,6 @@
     <ClCompile Include="1073-add_two_negabinary_num.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
-    <ClCompile Include="1072-flip_columns_for_max_equal_rows.cpp">
-      <Filter>1001-1100</Filter>
-    </ClCompile>
     <ClCompile Include="1071-gcd_of_string.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
@@ -1908,6 +1896,87 @@
     </ClCompile>
     <ClCompile Include="1052-grumpy_bookstore_owner.cpp">
       <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="962-max_width_ramp.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="670-max_swap.cpp">
+      <Filter>601-700</Filter>
+    </ClCompile>
+    <ClCompile Include="1072-flip_cols_for_max_equal_rows.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="047-permutations_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="045-jump_game_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="1078-occur_after_bigram.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1095-find_in_mountain_array.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1094-car_pooling.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1093-statistics_a_large_sample.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1092-shortest_common_superseq.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1091-shortest_path_in_matrix.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1089-duplicate_zeros.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1081-samllest_subseq_distinct.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1079-letter_tile_ossibilities.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1103-distribute_candies_2.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1124-longest_well_perform_interval.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1123-lowest_common_ancestor.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1122-relative_sort_array.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1116-print_zero_even_odd.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1115-print_foobar_alternately.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1114-print_in_order.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1110-delete_node_return_forest.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1109-corporate_flight_book.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1108-defanging_ip_address.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1106-parsing_boolean_expr.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1105-filling_bookcase_shelves.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1104-path_in_zigzag_binary_tree.cpp">
+      <Filter>1101-1200</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

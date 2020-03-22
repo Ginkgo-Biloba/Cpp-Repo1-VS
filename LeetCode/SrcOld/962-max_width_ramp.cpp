@@ -78,8 +78,8 @@ int maxWidthRamp(vector<int>& A)
 	for (int i = len - 1; i > ans; --i)
 		while (!idx.empty() && A[idx.back()] <= A[i])
 		{
-			ans = max(ans, i - idx.back()),
-				idx.pop_back();
+			ans = max(ans, i - idx.back());
+			idx.pop_back();
 		}
 
 	return ans;
