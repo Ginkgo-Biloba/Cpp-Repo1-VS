@@ -37,6 +37,10 @@
 		"stdexcept": "cpp",
 		"utility": "cpp",
 		"typeinfo": "cpp",
-		"thread": "cpp"
+		"thread": "cpp",
+		"algorithm": "cpp",
+		"random": "cpp",
+		"istream": "cpp",
+		"streambuf": "cpp"
 	},
 }

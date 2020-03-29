@@ -1978,6 +1978,81 @@
     <ClCompile Include="1104-path_in_zigzag_binary_tree.cpp">
       <Filter>1101-1200</Filter>
     </ClCompile>
+    <ClCompile Include="1125-smallest_sufficient_team.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1128-num_of_eq_domino_pairs.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1130-min_cost_tree_from_leaf.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1131-max_of_abs_val_expr.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1137-nth_tribonacci_num.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1138-alphabet_board_path.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1139-largest_1bordered_square.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1140-stone_gamme_2.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1143-longest_common_subseq.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1144-dec_elem_make_zigzag.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1145-binary_tree_color_game.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1146-snapshot_array.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1147-longest_chunked_palindrome.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1154-day_of_the_year.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1155-num_dice_rolls_target_sum.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1156-swap_for_longest_repeated_char_substr.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1157-majority_elem_in_subarray.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1160-find_words_formed_by_chars.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1161-max_level_sum_of_binary_tree.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1162-as_far_from_land_as_possible.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1163-last_substr_in_lexicographical_order.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1170-compare_string_by_frequency.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1171-remove_zero_sum_nodes.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1172-dinner_plate_stacks.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1175-prime_arrangements.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
