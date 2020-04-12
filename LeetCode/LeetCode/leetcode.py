@@ -30,4 +30,3 @@ print(s.minAreaFreeRect(b))
 print(s.minAreaFreeRect(c))
 print(s.minAreaFreeRect(d))
 
-# pingjie129 54558660

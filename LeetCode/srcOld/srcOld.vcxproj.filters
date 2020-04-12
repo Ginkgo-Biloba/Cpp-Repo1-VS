@@ -41,6 +41,12 @@
     <Filter Include="1101-1200">
       <UniqueIdentifier>{175f45cf-70fe-4d09-990b-5c96d3e8020d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1201-1300">
+      <UniqueIdentifier>{e295e266-06ac-4f5e-ba81-a4bda929bdc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1301-1400">
+      <UniqueIdentifier>{ba293331-73a6-457a-886a-df19b1199f92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -2052,6 +2058,171 @@
     </ClCompile>
     <ClCompile Include="1175-prime_arrangements.cpp">
       <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1177-can_make_palindrome.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1178-num_of_valid_words_for_puzzle.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1184-distance_between_bus_stops.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1185-day_of_the_week.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1186-max_subary_sum_with_1_delete.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1189-max_num_of_balloons.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1190-reverse_substr_between_parentheses.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1191-k_concatenation_max_sum.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1192-critical_connections_in_network.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1195-fizz_buzz_multithread.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1200-min_abs_difference.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="1201-ugly_num_3.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1239-max_len_concatenated_string.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1238-circular_permutation.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1237-find_positive_int_for_given_equation.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1235-max_profit_job_schedule.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1234-replace_substr_for_balance.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1233-remove_subfolders_from_filesystem.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1232-check_if_straight_line.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1227-airplane_seat_assign_probability.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1224-max_equal_freq.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1223-dice_roll_simulation.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1222-queens_can_attack_king.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1221-split_balanced_string.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1220-count_vowel_permutation.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1219-path_with_max_gold.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1218-longest_arithmetic_subseq_of_given_diff.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1217-play_with_chips.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1210-min_move_to_target_with_rotation.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1209-remove_all_adj_dup_in_string.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1208-equal_substr_within_budget.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1207-unique_num_occurrence.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1206-design_skiplist.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1203-sort_items_by_group_depends.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1240-tiling_rectangle_with_squares.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1276-num_burger_with_no_waste_ingredient.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1275-winner_on_tic_tac_toe_game.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1269-num_ways_stay_same_palce.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1268-search_suggestion_system.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1267_count-servers_communicate.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1266-min_time_visit_all_point.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1262-greatest_sum_divisible_by_3.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1261-find_elem_in_contaminated_BT.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1260-shift_2d_grid.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1255-max_score_word_formed_by_letter.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1254-num_of_closed_island.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1253-reconstruct_2_row_binary_matrix.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1252-cell_with_odd_value.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1250-check_good_array.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1249-min_remove_make_valid_parentheses.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1248-count_num_of_nice_subary.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1247-min_swap_make_str_equal.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1304-find_n_unique_int_sum_zero.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1386-cinema_seat_allocation.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1306-jump_game_3.cpp">
+      <Filter>1301-1400</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
