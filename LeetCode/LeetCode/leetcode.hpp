@@ -28,10 +28,12 @@
 #include <vector>
 using std::array;
 using std::deque;
+using std::map;
 using std::max;
 using std::min;
 using std::pair;
 using std::priority_queue;
+using std::set;
 using std::string;
 using std::unique_ptr;
 using std::unordered_map;
@@ -75,4 +77,3 @@ void output(vector<string> const& vec,
 		printf("%s%s", s.c_str(), delimit);
 	printf("\n");
 }
-

@@ -26,34 +26,30 @@
 	字符串大小将在 [1，100] 范围内。
 */
 
-// https://leetcode.com/problems/valid-parenthesis-string/discuss/107611/Very-concise-C%2B%2B-solution-with-explaination.-No-DP
-// 抄的
 bool checkValidString(string s)
 {
-	// 未匹配的 ( 的数量范围
-	int lo = 0, hi = 0;
+	int left = 0, L = 0, R = 0;
 	for (char c : s)
 	{
 		if (c == '(')
+			++left;
+		else if (c == '*')
 		{
-			++lo;
-			++hi;
+			++L;
+			++R;
 		}
-		else if (c == ')')
+		else
 		{
-			--lo;
-			--hi;
+			if (left > 0)
+				--left;
+			else if (L > 0)
+				--L;
+			else
+				return false;
 		}
-		else // c == '*'
-		{
-			--lo;
-			++hi;
-		}
-		lo = std::max(lo, 0);
-		if (hi < 0)
-			return false;
+		R = min(left, R);
 	}
-	return lo == 0;
+	return left <= R;
 }
 
 

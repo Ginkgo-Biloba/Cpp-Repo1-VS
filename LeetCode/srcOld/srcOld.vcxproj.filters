@@ -47,6 +47,9 @@
     <Filter Include="1301-1400">
       <UniqueIdentifier>{ba293331-73a6-457a-886a-df19b1199f92}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1401-1500">
+      <UniqueIdentifier>{44ee0a2a-fd44-4d4d-a2aa-33cb3945b564}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="001-fix_sum_2.cpp">
@@ -2222,6 +2225,192 @@
       <Filter>1301-1400</Filter>
     </ClCompile>
     <ClCompile Include="1306-jump_game_3.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1277-count_square_submat_all_one.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1278-palindrome_partition_3.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1281-sub_product_sum_digit.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1282-group_people_given_size.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1283-smallest_divisor_given_threashold.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1284-min_flip_to_zero_mat.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1286-iterator_for_combination.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1287-elem_more_then_quarter.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1288-remove_covered_intervals.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1289-min_fall_path_sum_2.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1290-convert_bin_linked_list_to_int.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1291-sequential_digits.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1292-max_square_sum_less_threashold.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1295-num_with_even_digits.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1293-short_path_in_grid_with_obstacles.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1296-divide_array_in_k_consecutive_num.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1298-max_candy_can_get_from_box.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1299-replace_with_greatest_on_right.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1300-sum_of_mutated_array_to_target.cpp">
+      <Filter>1201-1300</Filter>
+    </ClCompile>
+    <ClCompile Include="1301-num_of_path_max_score.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1302-deepest_leaves_sum.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1305-all_elem_in_2_BST.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1307-verbal_arithmetic_puzzle.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1309-decrypt_string_from_alphabet.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1310-xor_query_of_subary.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1311-watched_videos_by_friends.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1312-min_insert_make_palindrome.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1313-decompress_RLE_list.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1314-matrix_block_sum.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1315-sum_of_node_with_even_grandparent.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1316-distinct_echo_substr.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1317-convert_int_to_2_no_zero_int.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1318-min_flip_make_or_equal.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1319-num_of_op_make_network_connected.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1320-min_distance_type_using_2_finger.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1323-max_69_num.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1324-print_word_vertically.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1325-delete_leaves_with_given_value.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1326-min_num_of_taps_water_garden.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1328-break_palindrome.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1329-sort_matrix_diagonally.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1395-count_num_of_team.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1406-stone_game_3.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1405-longest_happy_string.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1330-reverse_subarray_maximize_value.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1344-angle_between_hands_of_clock.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1343-num_subarray_size_K_avg_ge_threshold.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1342-num_step_reduce_to_zero.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1340-jump_game_5.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1339-max_product_of_splitted_BT.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1338-reduce_array_size_to_half.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1337-K_weakest_row_in_matrix.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1335-min_difficulty_of_job_schedule.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1334-city_with_smallest_neighbors.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1333-filter_restaurants.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1332-remove_palindromic_subseq.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1331-rank_tansform_of_array.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1345-jump_game_4.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1346-check_N_and_double_exist.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1347-min_step_make_anagram.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1348-tweet_count_per_frequency.cpp">
+      <Filter>1301-1400</Filter>
+    </ClCompile>
+    <ClCompile Include="1349-max_student_take_exam.cpp">
       <Filter>1301-1400</Filter>
     </ClCompile>
   </ItemGroup>
