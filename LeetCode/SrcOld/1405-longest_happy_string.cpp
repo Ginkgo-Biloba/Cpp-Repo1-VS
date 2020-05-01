@@ -30,53 +30,59 @@
 	a + b + c > 0
 */
 
-typedef pair<int, char> pic;
-
-void large_op(pic& a, pic& b)
+class Solution
 {
-	// 如果相等，也交换
-	pic t = a;
-	a = (b.first < a.first) ? a : b;
-	b = (b.first < t.first) ? b : t;
-}
+public:
+	typedef pair<int, char> PIC;
 
-void large_op(pic* T)
-{
-	large_op(T[0], T[1]);
-	large_op(T[0], T[2]);
-	large_op(T[1], T[2]);
-}
-
-string longestDiverseString(int a, int b, int c)
-{
-	string S;
-	pic T[3] = { { a, 'a' }, { b, 'b' }, { c, 'c' } };
-	large_op(T);
-	for (int i = 0; T[0].first > 0; ++i)
+	void large_op(PIC& a, PIC& b)
 	{
-		char ch = T[0].second;
-		if ((i < 2)
-			|| (S[i - 1] != ch)
-			|| (S[i - 2] != ch))
-		{
-			S.push_back(ch);
-			T[0].first -= 1;
-		}
-		else if (T[1].first > 0)
-		{
-			S.push_back(T[1].second);
-			T[1].first -= 1;
-		}
-		else
-			break;
-		large_op(T);
+		// 如果相等，也交换
+		PIC t = a;
+		a = (b.first < a.first) ? a : b;
+		b = (b.first < t.first) ? b : t;
 	}
-	return S;
-}
+
+	void large_op(PIC* T)
+	{
+		large_op(T[0], T[1]);
+		large_op(T[0], T[2]);
+		large_op(T[1], T[2]);
+	}
+
+	string longestDiverseString(int a, int b, int c)
+	{
+		string S;
+		PIC T[3] = { { a, 'a' }, { b, 'b' }, { c, 'c' } };
+		large_op(T);
+		for (int i = 0; T[0].first > 0; ++i)
+		{
+			char ch = T[0].second;
+			if ((i < 2)
+				|| (S[i - 1] != ch)
+				|| (S[i - 2] != ch))
+			{
+				S.push_back(ch);
+				T[0].first -= 1;
+			}
+			else if (T[1].first > 0)
+			{
+				S.push_back(T[1].second);
+				T[1].first -= 1;
+			}
+			else
+				break;
+			large_op(T);
+		}
+		return S;
+	}
+};
+
 
 int main()
 {
-	OutString(longestDiverseString(1, 1, 7));
-	OutString(longestDiverseString(2, 2, 1));
-	OutString(longestDiverseString(7, 1, 0));
+	Solution s;
+	OutString(s.longestDiverseString(1, 1, 7));
+	OutString(s.longestDiverseString(2, 2, 1));
+	OutString(s.longestDiverseString(7, 1, 0));
 }

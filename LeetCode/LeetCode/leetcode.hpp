@@ -16,6 +16,7 @@
 #include <cstring>
 #include <ctime>
 #include <functional>
+#include <list>
 #include <map>
 #include <memory>
 #include <queue>
@@ -28,6 +29,7 @@
 #include <vector>
 using std::array;
 using std::deque;
+using std::list;
 using std::map;
 using std::max;
 using std::min;

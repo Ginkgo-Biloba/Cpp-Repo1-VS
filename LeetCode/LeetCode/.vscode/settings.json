@@ -1,3 +1,9 @@
 {
-	"python.pythonPath": "C:\\InstApp\\Miniconda3\\envs\\py35\\python.exe",
+	"python.pythonPath": "C:\\instapp\\Miniconda3\\envs\\py35\\python.exe",
+	"files.associations": {
+		"ccomplex": "cpp",
+		"complex": "cpp",
+		"string_view": "cpp",
+		"*.tcc": "cpp"
+	},
 }
