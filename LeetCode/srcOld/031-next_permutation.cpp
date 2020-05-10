@@ -1,57 +1,57 @@
-﻿#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#ifdef _MSC_VER
-#include <crtdbg.h>
-#pragma warning(disable: 4996)
-#endif
+﻿#include "leetcode.hpp"
 
-void nextPermutation(char* str, int const& len)
+/* 31. 下一个排列
+
+实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
+
+如果不存在下一个更大的排列，则将数字重新排列成最小的排列（即升序排列）。
+
+必须原地修改，只允许使用额外常数空间。
+
+以下是一些例子，输入位于左侧列，其相应输出位于右侧列。
+1,2,3 → 1,3,2
+3,2,1 → 1,2,3
+1,1,5 → 1,5,1
+*/
+
+void nextPermutation(vector<int>& A)
 {
-	int q, r; char c;
-	if (len <= 1) return;
-
-	/* 从后往前找 str[q - 1] < str[q] */
-	/* 没有则说明整个字符串倒序，所以全部反转 */
-	for (q = len - 1; q > 0; q--)
+	int len = static_cast<int>(A.size());
+	if (len < 2)
+		return;
+	int p = len - 2, q, t;
+	for (; p >= 0; --p)
 	{
-		if (str[q - 1] < str[q])
+		if (A[p] < A[p + 1])
 			break;
 	}
-
-	/* 找最后一个 r 使得 str[r] > str[q - 1] */
-	if (q > 0)
+	if (p >= 0)
 	{
-		c = str[q - 1];
-		for (r = len - 1; r > q; r--)
+		for (q = len - 1; p < q; --q)
 		{
-			if (str[r] > c)
+			if (A[p] < A[q])
 				break;
 		}
-		/* 交换 */
-		str[q - 1] = str[r]; str[r] = c;
+		t = A[p];
+		A[p] = A[q];
+		A[q] = t;
 	}
-
-	/* 反转 [q, len - 1] */
-	r = len - 1;
-	while (q < r)
+	++p;
+	q = len - 1;
+	for (; p < q; ++p, --q)
 	{
-		c = str[q]; str[q] = str[r]; str[r] = c;
-		q++; r--;
+		t = A[p];
+		A[p] = A[q];
+		A[q] = t;
 	}
 }
-
 
 int main()
 {
-	char* str = (char*)(malloc(1024));
-	fscanf(stdin, "%1023s", str);
-	nextPermutation(str, (int)(strlen(str)));
-	fprintf(stdout, "%s\n", str);
-	free(str);
-#ifdef _MSC_VER
-	_CrtDumpMemoryLeaks(); /* 检测内存泄漏而已 */
-#endif
-	return 0;
+	vector<int> a = { 1, 2, 3, 4 };
+	for (int i = 1 * 2 * 3 * 4; i > 0; --i)
+	{
+		output(a);
+		nextPermutation(a);
+	}
 }
-

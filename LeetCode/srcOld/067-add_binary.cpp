@@ -1,62 +1,57 @@
 ﻿#include "leetcode.hpp"
 
-vector<int> plusOne(vector<int>& digits)
+/* 67. 二进制求和
+
+给你两个二进制字符串，返回它们的和（用二进制表示）。
+
+输入为 非空 字符串且只包含数字 1 和 0。
+
+示例 1:
+输入: a = "11", b = "1"
+输出: "100"
+
+示例 2:
+输入: a = "1010", b = "1011"
+输出: "10101"
+
+提示：
+	每个字符串仅由字符 '0' 或 '1' 组成。
+	1 <= a.length, b.length <= 10^4
+	字符串如果不是 "0" ，就都不含前导零。
+*/
+
+string addBinary(string A, string B)
 {
-	std::reverse(digits.begin(), digits.end());
-	unsigned const len = static_cast<unsigned>(digits.size());
-	int sum = 1;
-
-	for (unsigned l = 0u; l < len; ++l)
+	if (A.length() < B.length())
+		A.swap(B);
+	int a = static_cast<int>(A.length());
+	int b = static_cast<int>(B.length());
+	string C;
+	int v = 0;
+	C.reserve(a + 1);
+	reverse(A.begin(), A.end());
+	reverse(B.begin(), B.end());
+	for (int i = 0; i < b; ++i)
 	{
-		sum += digits[l];
-		digits[l] = sum % 10;
-		sum /= 10;
-		if (sum == 0) break;
+		v += A[i] + B[i] - (2 * '0');
+		A[i] = static_cast<char>((v & 1) + '0');
+		v >>= 1;
 	}
-	if (sum > 0)
-		digits.push_back(sum);
-
-	std::reverse(digits.begin(), digits.end());
-	return digits;
-}
-
-string addBinary(string a, string b)
-{
-	std::reverse(a.begin(), a.end());
-	std::reverse(b.begin(), b.end());
-	size_t const lenA = a.size(), lenB = b.size();
-	size_t const len = std::min(lenA, lenB);
-	size_t const lenMax = std::max(lenA, lenB);
-	if (lenA < lenB) a.resize(lenB);
-
-	int sum = 0;
-	for (size_t l = 0u; l < len; ++l)
+	for (int i = b; i < a; ++i)
 	{
-		sum += (a[l] - '0') + (b[l] - '0');
-		a[l] = (sum & 1) + '0';
-		sum >>= 1;
+		v += A[i] - '0';
+		A[i] = static_cast<char>((v & 1) + '0');
+		v >>= 1;
 	}
-	char const* ptr = (lenA < lenB) ? b.data() : a.data();
-	for (size_t l = len; l < lenMax; l++)
-	{
-		sum += ptr[l] - '0';
-		a[l] = (sum & 1) + '0';
-		sum >>= 1;
-	}
-	if (sum)
-		a.push_back('1');
-
-	std::reverse(a.begin(), a.end());
-	return a;
+	if (v)
+		A.push_back('1');
+	reverse(A.begin(), A.end());
+	return A;
 }
 
 
 int main()
 {
-	vector<int> digits = { 9, 9 };
-	digits = plusOne(digits);
-	output(digits, "plusOne");
-
-	string binSum = addBinary(string("1010"), string("1011"));
-	printf("%1s = %s\n", "addBinary", binSum.c_str());
+	OutString(addBinary("11", "1"));
+	OutString(addBinary("1010", "1011"));
 }

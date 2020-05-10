@@ -1,190 +1,223 @@
-﻿#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <cassert>
-#include <vector>
-#include <algorithm>
-#ifdef _MSC_VER
-#include <crtdbg.h>
-#pragma warning(disable: 4996)
-#endif
+﻿#include "leetcode.hpp"
 
-/* 题目说可以假定唯一解 */
-class Sudoku
+/* 37. 解数独
+
+编写一个程序，通过已填充的空格来解决数独问题。
+
+一个数独的解法需遵循如下规则：
+	数字 1-9 在每一行只能出现一次。
+	数字 1-9 在每一列只能出现一次。
+	数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
+
+空白格用 '.' 表示。
+
+http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png
+一个数独。
+
+http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png
+答案被标成红色。
+
+Note:
+	给定的数独序列只包含数字 1-9 和字符 '.' 。
+	你可以假设给定的数独只有唯一解。
+	给定数独永远是 9x9 形式的。
+*/
+
+// https://leetcode.com/problems/sudoku-solver/discuss/15748/Sharing-my-2ms-C%2B%2B-solution-with-comments-and-explanations.
+// 抄的
+class Solution
 {
-public:
-	static int const dim = 9;
+	typedef unsigned char uchar;
+	typedef unsigned short ushort;
 
-	Sudoku() {};
-	~Sudoku() {};
-	void solve(FILE* fin, FILE* fout);
-
-protected:
-	struct Cell
+	struct cell
 	{
-		char value; // [1, 9]，0 则说明未设定
-		char numValid; // 可以填多少个 (未约束的) 数
-		char constraint[dim + 1]; // 如果 constraint[v] == 1 则单元格不能填 v，10 不考虑 0
+		uchar val; // 填的值
+		uchar numtry; // 可以填的值的个数
+		ushort forbid; // 不能填的值，如果该位是 1
+	};
 
-		Cell() : value(0), numValid(dim) { memset(constraint, 0, dim + 1); }
-		void all(int v) { memset(constraint, v, dim + 1); }
-		Cell& operator=(Cell const& rhs)
+	struct point
+	{
+		int y, x;
+	};
+
+
+	cell grid[9][9];
+	// backtracking state - list of empty cells
+	vector<point> bt;
+
+	ushort bitmask(int v)
+	{
+		return static_cast<ushort>(1 << v);
+	}
+
+	// sets the value of the cell to [v]
+	// the function also propagates constraints to other cells and deduce new values where possible
+	bool set(int h, int w, int v);
+
+	// update constraints of the cell i,j by excluding possibility of 'excludedValue'
+	// once there's one possibility left the function recurses back into set()
+	bool update(int h, int w, int exv)
+	{
+		ushort mask = bitmask(exv);
+		cell& c = grid[h][w];
+		if (c.forbid & mask)
+			return true;
+		if (c.val == exv)
+			return false;
+		c.forbid |= mask;
+		--(c.numtry);
+		if (c.numtry > 1)
+			return true;
+		for (int v = 1; v <= 9; ++v)
 		{
-			if (this != &rhs)
-			{
-				value = rhs.value; numValid = rhs.numValid;
-				memcpy(this->constraint, rhs.constraint, dim + 1);
-			}
-			return (*this);
+			if (!(c.forbid & mask))
+				return set(h, w, v);
 		}
-	};
-	struct Point
-	{
-		int r, c;
+		assert(false);
+		return false;
+	}
 
-		Point(int rr, int cc) :r(rr), c(cc) {}
-	};
-
-private:
-	Cell board[dim][dim];
-	std::vector<Point> blankCell; // 空单元格列表，记录回溯状态
-	bool set(int r, int c, char v);
-	bool updateConstraint(int r, int c, char exv);
-	bool findValForBlankCell();
+	// finds value for all empty cells with index >=k
 	bool backtrack(int k);
+
+	// find values for empty cells
+	bool findval()
+	{
+		bt.clear();
+		bt.reserve(81);
+		for (int h = 0; h < 9; ++h)
+			for (int w = 0; w < 9; ++w)
+			{
+				if (!(grid[h][w].val))
+					bt.push_back({ h, w });
+			}
+		sort(bt.begin(), bt.end(),
+			[this](point const& a, point& b) -> bool
+		{
+			return grid[a.y][a.x].numtry < grid[b.y][b.x].numtry;
+		});
+		return backtrack(0);
+	}
+
+public:
+	void solveSudoku(vector<vector<char>>& board)
+	{
+		// clear array
+		memset(grid, 0, sizeof(grid));
+		// Decoding input board into the internal cell matrix.
+		// As we do it - constraints are propagated and even additional values are set as we go in the case if it is possible to unambiguously deduce them
+		for (int h = 0; h < 9; ++h)
+			for (int w = 0; w < 9; ++w)
+			{
+				if (board[h][w] == '.')
+					continue;
+				int v = board[h][w] - '0';
+				// sudoku is either incorrect or unsolvable
+				if (!set(h, w, v))
+					return;
+			}
+
+		// if we're lucky we've already got a solution,
+		// however, if we have empty cells we need to use backtracking to fill them.
+		// try to solve, and if sudoku is unsolvable, return
+		if (!findval())
+			return;
+
+		// copying the solution back to the board
+		for (int h = 0; h < 9; ++h)
+			for (int w = 0; w < 9; ++w)
+			{
+				if (grid[h][w].val)
+					board[h][w] = static_cast<char>(grid[h][w].val + '0');
+			}
+	}
 };
 
-void Sudoku::solve(FILE* fin, FILE* fout)
+
+bool Solution::set(int h, int w, int v)
 {
-	char row[10];
-	for (int r = 0; r < dim; r++)
+	ushort mask = bitmask(v);
+	cell& c = grid[h][w];
+	if (c.val == v)
+		return true;
+	if (c.forbid & mask)
+		return false;
+	c.forbid = 0xffff;
+	c.forbid ^= mask;
+	c.numtry = 1;
+	c.val = static_cast<uchar>(v);
+
+	int T = h / 3 * 3;
+	int L = w / 3 * 3;
+	// propagating constraints
+	for (int k = 0; k < 9; ++k)
 	{
-		fscanf(fin, "%9s", row);
-		for (int c = 0; c < dim; c++)
-		{
-			if (row[c] != '.' && !set(r, c, row[c] - '0')) return; // 数独有错或不可解
-		}
+		// to the row
+		if ((h != k) && !update(k, w, v))
+			return false;
+		// to the column
+		if ((w != k) && !update(h, k, v))
+			return false;
+		// to the 3x3 square
+		int y = T + k / 3;
+		int x = L + k % 3;
+		if ((y != h) && (x != w) && !update(y, x, v))
+			return false;
 	}
-
-	/* 如果没有空格子，认为给出的就是一个解 */
-	/* 否则需要回溯 */
-	if (!findValForBlankCell()) return;
-
-	/* 输出 */
-	for (int r = 0; r < dim; r++)
-	{
-		for (int c = 0; c < dim; c++)
-			fprintf(fout, "%hhd ", board[r][c].value);
-		fprintf(fout, "\n");
-	}
-}
-
-/* 设定单元格 board[r][c] 的值为 v
- * 同时传播约束到其他的单元格并推断新的可能的值*/
-bool Sudoku::set(int r, int c, char v)
-{
-	/* 更新单元格状态 */
-	Cell* bc = &(board[r][c]);
-	if (bc->value == v) return true;
-	if (bc->constraint[v]) return false;
-	bc->all(1); // 所有数都不可填
-	bc->constraint[v] = 0; // 重设状态，只有 v 可填
-	bc->numValid = 1;
-	bc->value = v;
-
-	/* 传播约束 */
-	int ir = r / 3 * 3, ic = c / 3 * 3;
-	for (int k = 0; k < 9; k++)
-	{
-		if (r != k && !updateConstraint(k, c, v)) return false; // 行
-		if (c != k && !updateConstraint(r, k, v)) return false; // 列
-		int irk = ir + k / 3, ick = ic + (k & 0x11);
-		if (irk != r && ick != c && !updateConstraint(irk, ick, v)) return false; // 块
-	}
-
 	return true;
 }
 
-/* 更新单元格 board[r][c] 的约束，通过排除所有可能的 exv
- * 如果只有一个数可用，那么函数递归回 set (退出) */
-bool Sudoku::updateConstraint(int r, int c, char exv)
-{
-	Cell* bc = &(board[r][c]);
-	if (bc->constraint[exv]) return true; // 已经排除
-	if (bc->value == exv) return false; // 冲突
-	bc->constraint[exv] = 1; bc->numValid--; // 设置排除
-	if (bc->numValid > 1) return true; // 还有多个可填
-	for (char v = 1; v <= static_cast<char>(9); v++) // 只剩一个数可填，找出它并设置
-	{
-		if (!(bc->constraint[v])) return set(r, c, v);
-	}
-	assert(false); // 正确的话，永远不可能到达这里
-	return false;
-}
 
-/* 查找空单元格的值 */
-bool Sudoku::findValForBlankCell()
+bool Solution::backtrack(int k)
 {
-	/* 查找空单元格 */
-	blankCell.clear();
-	for (int r = 0; r < 9; r++)
-		for (int c = 0; c < 9; c++)
-		{
-			if (!(board[r][c].value))
-				blankCell.emplace_back(r, c);
-		}
-
-	/* 通过可能填的数字个数排序，提高回溯效率 */
-	std::sort(blankCell.begin(), blankCell.end(), [this](Point const& a, Point const& b) -> bool \
-	{ return board[a.r][a.c].numValid < board[b.r][b.c].numValid; });
-	return backtrack(0);
-}
-
-/* 发现所有索引小于 k 的空的单元格的数值 */
-bool Sudoku::backtrack(int k)
-{
-	if (k >= static_cast<int>(blankCell.size()))
+	int len = static_cast<int>(bt.size());
+	if (k >= len)
 		return true;
-
-	/* 最快的路径，只有 1 个可以填的数字 */
-	int r = blankCell[k].r, c = blankCell[k].c;
-	if (board[r][c].value)
+	int h = bt[k].y;
+	int w = bt[k].x;
+	// fast path - only 1 possibility
+	if (grid[h][w].val)
 		return backtrack(k + 1);
-
-	/* 可能数字个数大于 1 的情形，记录状态快照 */
-	Cell snapshot = board[r][c]; // 快照，用于回溯
-	char* cst = board[r][c].constraint;
-	for (char v = 1; v < static_cast<char>(9); v++)
-	{
-		if (!(cst[v])) // 可以填，就填一下试试
+	ushort forbid = grid[h][w].forbid;
+	// slow path >1 possibility.
+	// making snapshot of the state
+	cell backup[9][9];
+	memcpy(backup, grid, sizeof(grid));
+	for (int v = 1; v <= 9; ++v)
+		if (!(forbid & bitmask(v)))
 		{
-			if (set(r, c, v)) // 成功填上，继续下一个，
-				if (backtrack(k + 1)) return true; // 打印而不返回则输出所有解
-			// 填上去不行，恢复之前的快照，直接复制比撤销操作省事 (快)
-			board[r][c] = snapshot;
+			if (set(h, w, v) && backtrack(k + 1))
+				return true;
+			// restoring from snapshot,
+			// note: computationally this is cheaper
+			// than alternative implementation with undoing the changes
+			memcpy(grid, backup, sizeof(grid));
 		}
-	}
 	return false;
 }
 
 
 int main()
 {
-	/*
-	53..7....
-	6..195...
-	.98....6.
-	8...6...3
-	4..8.3..1
-	7...2...6
-	.6....28.
-	...419..5
-	....8..79
-	*/
-	Sudoku sdk;
-	sdk.solve(stdin, stdout);
-#ifdef _MSC_VER
-	_CrtDumpMemoryLeaks(); /* 检测内存泄漏而已 */
-#endif
-	return 0;
+	Solution s;
+	vector<vector<char>> b = {
+		{ '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+		{ '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+		{ '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+		{ '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+		{ '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+		{ '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+		{ '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+		{ '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+		{ '.', '.', '.', '.', '8', '.', '.', '7', '9' },
+	};
+	s.solveSudoku(b);
+	for (int h = 0; h < 9; ++h)
+	{
+		for (int w = 0; w < 9; ++w)
+			putchar(b[h][w]);
+		putchar('\n');
+	}
 }

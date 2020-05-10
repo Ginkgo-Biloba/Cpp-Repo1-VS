@@ -1,46 +1,34 @@
-﻿#include <cstdio>
-#include <cstdlib>
+﻿#include "leetcode.hpp"
 
-int maxArray(int const* array, int start, int stop)
+/* 53. 最大子序和
+
+给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+
+示例:
+输入: [-2,1,-3,4,-1,2,1,-5,4],
+输出: 6
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+
+进阶:
+如果你已经实现复杂度为 O(n) 的解法，尝试使用更为精妙的分治法求解。
+*/
+
+int maxSubArray(vector<int>& A)
 {
-	if (stop - start == 1) return array[start];
-
-	int iM = (stop - start + 1) / 2 + start;
-	int L = maxArray(array, start, iM);
-	int R = maxArray(array, iM, stop);
-
-	int cur = 0;
-	int mL = 0, mR = array[iM];
-	for (int iL = iM - 1; iL >= start; iL--)
+	int len = static_cast<int>(A.size());
+	int ans = INT_MIN, cur = 0;
+	for (int i = 0; i < len; ++i)
 	{
-		cur += array[iL];
-		if (cur > mL) mL = cur;
+		cur += A[i];
+		ans = max(ans, cur);
+		cur = max(cur, 0);
 	}
-	cur = mR;
-	for (int iR = iM + 1; iR < stop; iR++)
-	{
-		cur += array[iR];
-		if (cur > mR) mR = cur;
-	}
-
-	int M = mL + mR;
-
-	if (L > R)
-		return (M > L) ? M : L;
-	else
-		return (M > R) ? M : R;
-}
-
-
-
-int maxSubArray(int const* array, int num)
-{
-	return maxArray(array, 0, num);
+	return ans;
 }
 
 
 int main()
 {
-	int const array[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-	printf("%d\n", maxSubArray(array, sizeof(array) / sizeof(int)));
+	vector<int> a = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+	OutExpr(maxSubArray(a), "%d");
 }

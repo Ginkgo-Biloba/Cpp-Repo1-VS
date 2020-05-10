@@ -1,36 +1,59 @@
 ﻿#include "leetcode.hpp"
 
-void combine_dfs(int const n, int const k, int count, int idx, \
-	vector<int>& cur, vector<vector<int>>& ans)
+/* 77. 组合
+
+给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+
+示例:
+
+输入: n = 4, k = 2
+输出:
+[
+	[2,4],
+	[3,4],
+	[2,3],
+	[1,2],
+	[1,3],
+	[1,4],
+]
+*/
+
+class Solution
 {
-	if (k == count)
-	{
-		ans.push_back(cur);
-		return;
-	}
-
-	if ((k - count) > (n - idx)) // 加完数量还不够
-		return;
-
-	for (; idx < n; ++idx)
-	{
-		cur.push_back(idx + 1); // 题目第 1 个数是 1，不是 0
-		combine_dfs(n, k, count + 1, idx + 1, cur, ans);
-		cur.pop_back();
-	}
-}
-
-vector<vector<int>> combine(int n, int k)
-{
-	vector<int> cur;
 	vector<vector<int>> ans;
-	if (k > 0)
-		combine_dfs(n, k, 0, 0, cur, ans);
-	return ans;
-}
+	vector<int> cur;
+
+	void dfs(int n, int k)
+	{
+		if (k == 0)
+		{
+			ans.push_back(cur);
+			return;
+		}
+		if (k > n)
+			return;
+		for (; n >= 1; --n)
+		{
+			cur.push_back(n);
+			dfs(n - 1, k - 1);
+			cur.pop_back();
+		}
+	}
+
+public:
+	vector<vector<int>> combine(int n, int k)
+	{
+		cur.reserve(k);
+		dfs(n, k);
+		vector<vector<int>> R;
+		R.swap(ans);
+		return R;
+	}
+};
+
 
 int main()
 {
-	vector<vector<int>> grid = combine(5, 3);
-	output(grid, "combine");
+	Solution s;
+	output(s.combine(4, 2), "Combinations");
 }

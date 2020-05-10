@@ -1,40 +1,62 @@
-﻿#include <cstring>
-#include <cstdio>
-#include <cstdlib>
-#ifdef _MSC_VER
-#pragma warning(disable: 4996)
-#endif
+﻿#include "leetcode.hpp"
 
-/* 看看括号合不合法。{} () [] 合法，(] [} {] 这种不合法 */
-bool isValid(char const* str)
+/* 20. 有效的括号
+
+给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+
+有效字符串需满足：
+	左括号必须用相同类型的右括号闭合。
+	左括号必须以正确的顺序闭合。
+
+注意空字符串可被认为是有效字符串。
+
+示例 1:
+输入: "()"
+输出: true
+
+示例 2:
+输入: "()[]{}"
+输出: true
+
+示例 3:
+输入: "(]"
+输出: false
+
+示例 4:
+输入: "([)]"
+输出: false
+
+示例 5:
+输入: "{[]}"
+输出: true
+*/
+
+bool isValid(string s)
 {
-	size_t i, s = 0u, len = strlen(str);
-	char* stack = (char*)(malloc(len));
-	char c, d; bool is = true;
-	for (i = 0u; i < len; i++)
+	string t;
+	for (char c : s)
 	{
-		c = str[i];
 		if (c == '(' || c == '[' || c == '{')
-		{ stack[s] = c; s++; }
+			t.push_back(c);
 		else
 		{
-			s--; d = stack[s];
-			if ((c == ')' && d != '(') \
-				|| (c == ']' && d != '[') || (c == '}' && d != '{'))
-			{ is = false; break; }
+			if (t.empty()
+				|| (c == ')' && t.back() != '(')
+				|| (c == ']' && t.back() != '[')
+				|| (c == '}' && t.back() != '{'))
+				return false;
+			t.pop_back();
 		}
 	}
-	if (s != 0) is = false;
-	free(stack);
-	return is;
+	return t.empty();
 }
 
 
 int main()
 {
-	char* str = (char*)malloc(1024);
-	fscanf(stdin, "%1023s", str);
-	fprintf(stdout, "%s\n", (isValid(str) ? "Yes" : "No"));
-	free(str);
-	return 0;
+	OutBool(isValid("()"));
+	OutBool(isValid("()[]{}"));
+	OutBool(isValid("(]"));
+	OutBool(isValid("([)]"));
+	OutBool(isValid("{[]}"));
 }

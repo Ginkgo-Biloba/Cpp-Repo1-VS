@@ -27,9 +27,9 @@ int findNthDigit(int _n)
 {
 	int64_t n = _n;
 	int64_t base = 9, digit = 1, num = 1;
-	while (n > base*digit)
+	while (n > base * digit)
 	{
-		n -= base*digit;
+		n -= base * digit;
 		base *= 10;
 		++digit;
 		num *= 10;

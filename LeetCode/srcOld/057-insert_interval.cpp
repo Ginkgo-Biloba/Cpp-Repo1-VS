@@ -1,71 +1,87 @@
-﻿#include <vector>
-#include <iostream>
-#include <iterator>
-#include <algorithm>
-using std::ostream;
-using std::vector;
+﻿#include "leetcode.hpp"
 
-struct Interval
-{
-	int start;
-	int end;
-	Interval() : start(0), end(0) {}
-	Interval(int s, int e) : start(s), end(e) {}
-};
+/* 57. 插入区间
 
-ostream& operator<<(ostream& os, Interval const& a)
-{
-	os << "[" << a.start << ", " << a.end << "]";
-	return os;
-}
+给出一个无重叠的 ，按照区间起始端点排序的区间列表。
 
-struct CmpInterval
+在列表中插入一个新的区间，你需要确保列表中的区间仍然有序且不重叠（如果有必要的话，可以合并区间）。
+
+示例 1:
+输入: intervals = [[1,3],[6,9]], newInterval = [2,5]
+输出: [[1,5],[6,9]]
+
+示例 2:
+输入: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+输出: [[1,2],[3,10],[12,16]]
+解释: 这是因为新的区间 [4,8] 与 [3,5],[6,7],[8,10] 重叠。
+*/
+
+vector<vector<int>> merge(vector<vector<int>>& A)
 {
-	bool operator()(Interval const& a, Interval const& b)
+	vector<vector<int>> R;
+	vector<int> r(2);
+	int len = static_cast<int>(A.size());
+	sort(A.begin(), A.end(),
+		[](vector<int> const& a, vector<int> const& b)
 	{
-		return (a.start < b.start) ? true :
-			(b.start < a.start) ? false : (a.end < b.end);
-	}
-};
-
-vector<Interval> insert(vector<Interval>& intervals, Interval newInt)
-{
-	vector<Interval> out;
-	intervals.push_back(newInt);
-	std::sort(intervals.begin(), intervals.end(), CmpInterval());
-	size_t sz = intervals.size();
-	Interval val = intervals[0];
-	out.push_back(val);
-	for (size_t i = 1; i < sz; i++)
+		return (a[0] < b[0]) || (a[0] == b[0] && a[1] > b[1]);
+	});
+	for (int i = 0; i < len;)
 	{
-		Interval const cur = intervals[i];
-		if (cur.start <= val.end)
-			val.end = std::max(val.end, cur.end);
-		else
+		int k = i + 1;
+		r[0] = A[i][0];
+		r[1] = A[i][1];
+		while ((k < len) && (A[k][0] <= r[1]))
 		{
-			out.back() = val;
-			val = cur;
-			out.push_back(val);
+			r[1] = max(r[1], A[k][1]);
+			++k;
 		}
+		R.push_back(r);
+		i = k;
 	}
-
-	out.back() = val;
-	return out;
+	return R;
 }
+
+vector<vector<int>> insert_Org(vector<vector<int>>& A, vector<int>& b)
+{
+	A.push_back(b);
+	return merge(A);
+}
+
+vector<vector<int>> insert(vector<vector<int>>& A, vector<int>& b)
+{
+	vector<vector<int>> R;
+	int len = static_cast<int>(A.size());
+	int i = 0;
+	while ((i < len) && A[i][1] < b[0])
+	{
+		R.push_back(A[i]);
+		++i;
+	}
+	while ((i < len) && A[i][0] <= b[1])
+	{
+		b[0] = min(b[0], A[i][0]);
+		b[1] = max(b[1], A[i][1]);
+		++i;
+	}
+	R.push_back(b);
+	while (i < len)
+	{
+		R.push_back(A[i]);
+		++i;
+	}
+	return R;
+}
+
 
 int main()
 {
-	vector<Interval> vec1 = { { 1, 2 }, { 3, 5 }, { 6, 7 }, { 8, 10 }, {12, 16} };
-	Interval int1 = { 4, 8 };
-	vector<Interval> vec2 = { { 1, 3 }, { 6, 9 } };
-	Interval int2 = { 2, 5 };
-
-	vector<Interval> out1 = insert(vec1, int1);
-	vector<Interval> out2 = insert(vec2, int2);
-
-	std::copy(out1.begin(), out1.end(), std::ostream_iterator<Interval>(std::cout, "; "));
-	std::cout << "\n";
-	std::copy(out2.begin(), out2.end(), std::ostream_iterator<Interval>(std::cout, "; "));
-	std::cout << "\n";
+	vector<vector<int>>
+		a = { { 1, 3 }, { 6, 9 } },
+		c = { { 1, 2 }, { 3, 5 }, { 6, 7 }, { 8, 10 }, { 12, 16 } };
+	vector<int>
+		b = { 2, 5 },
+		d = { 4, 8 };
+	output(insert(a, b), "Insert Interval");
+	output(insert(c, d), "Insert Interval");
 }
-

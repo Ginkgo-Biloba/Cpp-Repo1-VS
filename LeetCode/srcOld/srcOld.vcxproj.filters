@@ -52,513 +52,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="001-fix_sum_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="002-add_fwd_list.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="003-longest_substr_no_repeat.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="004-median_of_2_sorted_arrays.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="005-palindrome.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="006-zigzag_conversion.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="007-reverse_integre.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="008-string_to_integer.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="009-palindrome_number.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="010-regex_matching.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="011-contain_most_water.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="012-integre_to_roman.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="013-roman_to_interger.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="014-longest_common_prefix.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="015-3_sum.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="016-3_sum_closest.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="017-letter_combinations.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="018-k_sum.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="019-rm_nth_node_backward.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="020-valid_parentheses.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="021-merge_2_sorted_lists.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="022-gen_parenthesis.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="023-merge_k_sorted_lists.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="024-swap_nodes_in_pairs.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="025-rev_nodes_in_k_gps.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="026-rm_dups_in_sorted_array.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="027-remove_if_eq.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="028-strstr_kmp.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="029-div_2_integers.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="030-substr_with_words.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="031-next_permutation.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="032-longest_valid_parentheses.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="033-find_in_rot_sorted_array.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="034-binary_search.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="035-find_insert_pos.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="036-valid_sudoku.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="037-solve_sudoku.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="038-look_and_say.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="039-combination_sum.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="040-combination_sum2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="041-first_missing_positive.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="042-trapping_rain_water.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="043-multiply_string.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="044-wildcard_matching.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="046-permutations.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="048-rotate_image.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="049-group_anagrams.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="050-pow_x_n.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="051-n_queens.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="052-n_queens2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="053-max_subarray.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="054-spiral_matrix.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="055-jump_game.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="056-merge_intervals.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="057-insert_interval.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="059-spiral_matrix_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="061-rotate_list.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="063-unique_paths.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="064-min_path_sum.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="067-add_binary.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="072-edit_distance.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="073-set_zeros.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="074-search_matrix.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="075-sort_colors.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="077-combinations.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="078-subsets.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="079-word_search.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="080-remove_duplicates_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="083-find_in_rot_sorted_array_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="084-large_rect_in_hist.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="085-max_rect.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="088-merge_sorted_array.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="090-subsets_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="091-decode_ways.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="093-restore_ip_addresses.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="096-unique_bst.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="115-distinct_subseq.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="119-pascal_triangle.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="121-buy_sell_stock.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="130-surrounded_regions.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="137-single_number.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="139-word_break.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="143-reorder_list.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="149-max_points_on_line.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="150-eval_prn.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="151-reverse_words.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="152-max_product_subarray.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="154-find_min_in_rot_array.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="162-find_peak_elem.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="164-max_gap.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="165-cmp_version.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="166-frac_to_dec.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="168-excel_col_title.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="169-majority_elem.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="179-largest_number.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="188-buy_sell_stock.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="198-house_robber.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="200-num_of_islands.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="201-bit_and_range.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="202-happy_num.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="204-count_primes.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="205-isomorphic_string.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="213-house_robber_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="227-basic_calculator_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="220-contains_duplicate_3.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="216-combination_sum_3.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="214-shortest_palindrome.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="212-word_search_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="210-course_schedule_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="221-max_square.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="228-summary_ranges.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="223-rect_area.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="295-median_in_stream.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="229-majority_elem_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="238-product_except_self.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="233-num_of_digit_1.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="260-single_number_3.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="264-ugly_num_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="300-longest_inc_subseq.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="287-find_dup_num.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="279-prefer_squares.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="278-first_bad_version.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="274-h_index.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="268-missing_num.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="301-rm_invalid_().cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="060-permutation_sequence.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="076-min_win_substr.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="128-long_consecutive_seq.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="131-palindrome_part.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="132-palindrome_part_2.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="134-gas_station.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="135-candy.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="155-min_stack.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="174-dungeon_game.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="187-repeated_dna_seq.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="224-basic_calculator.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="258-add_digits.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="240-search_2d_matrix_2.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="239-slide_window_max.cpp">
-      <Filter>201-300</Filter>
-    </ClCompile>
-    <ClCompile Include="304-range_sum_2.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="306-additive_num.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="310-min_height_trees.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="312-burst_balloons.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="315-count_smaller.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="313-super_ugly_num.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="316-rm_dup_letter.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="318-max_product.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="319-bulb_switcher.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="321-create_max_num.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="322-coin_change.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="324-wiggle_sort_2.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="328-odd_even_list.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="329-long_inc_path.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="330-patch_array.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="334-inc_triple.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="335-selft_crossing.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="327-count_range_sum.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="336-palindrome_pairs.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="337-house_robber_3.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="338-count_bits.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="343-integer_break.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="352-disjoint_intervals.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="354-russian_doll_envelopes.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="357-nums_with_unique_digits.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="363-max_sum_no_larger_k.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="365-water_jug_problem.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="372-superpow.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="373-k_samllest_sum.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
-    <ClCompile Include="375-guess_num_2.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
     <ClCompile Include="376-wiggle_subseq.cpp">
       <Filter>301-400</Filter>
     </ClCompile>
@@ -877,9 +370,6 @@
     <ClCompile Include="582-del_op_for_2_string.cpp">
       <Filter>501-600</Filter>
     </ClCompile>
-    <ClCompile Include="307-range_sum_query.cpp">
-      <Filter>301-400</Filter>
-    </ClCompile>
     <ClCompile Include="593-valid_square.cpp">
       <Filter>501-600</Filter>
     </ClCompile>
@@ -1035,9 +525,6 @@
     </ClCompile>
     <ClCompile Include="700-search_in_bst.cpp">
       <Filter>601-700</Filter>
-    </ClCompile>
-    <ClCompile Include="218-skyline_problem.cpp">
-      <Filter>201-300</Filter>
     </ClCompile>
     <ClCompile Include="736-parse_lisp_expr.cpp">
       <Filter>701-800</Filter>
@@ -1371,9 +858,6 @@
     </ClCompile>
     <ClCompile Include="850-rectange_area_2.cpp">
       <Filter>801-900</Filter>
-    </ClCompile>
-    <ClCompile Include="209-min_size_subary_sum.cpp">
-      <Filter>201-300</Filter>
     </ClCompile>
     <ClCompile Include="852-peak_index_in_array.cpp">
       <Filter>801-900</Filter>
@@ -1911,12 +1395,6 @@
     </ClCompile>
     <ClCompile Include="1072-flip_cols_for_max_equal_rows.cpp">
       <Filter>1001-1100</Filter>
-    </ClCompile>
-    <ClCompile Include="047-permutations_2.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="045-jump_game_2.cpp">
-      <Filter>001-100</Filter>
     </ClCompile>
     <ClCompile Include="1078-occur_after_bigram.cpp">
       <Filter>1001-1100</Filter>
@@ -2497,9 +1975,6 @@
     <ClCompile Include="1387-sort_int_by_power_value.cpp">
       <Filter>1301-1400</Filter>
     </ClCompile>
-    <ClCompile Include="146-LRU_cache.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
     <ClCompile Include="1388-pizza_with_3n_slices.cpp">
       <Filter>1301-1400</Filter>
     </ClCompile>
@@ -2592,6 +2067,300 @@
     </ClCompile>
     <ClCompile Include="1414-min_num_fibonacci_sum_is_K.cpp">
       <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="001-two_sum.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="002-add_two_num.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="003-longest_substr_no_repeat_char.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="004-median_of_2_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="005-longest_palindromic_substr.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="006-zigzag_conversion.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="007-reverse_int.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="008-str_to_int_atoi.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="009-palindrome_num.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="010-regular_expression_match.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="011-container_with_most_water.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="012-int_to_roman.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="013-roman_to_int.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="014-longest_common_prefix.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="015-three_sum.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="020-valid_parentheses.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="016-three_sum_closest.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="017-letter_combination_of_phone_num.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="018-four_sum.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="019-remove_nth_node_from_end_of_list.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="021-merge_two_sorted_lists.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="022-generate_parentheses.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="023-merge_K_sorted_list.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="024-swap_node_in_paris.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="025-reverse_nodes_in_K_group.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="026-remove_duplicate_from_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="027-remove_elem.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="028-implement_strstr.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="029-divide_two_int.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="030-substr_with_concat_words.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="031-next_permutation.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="032-longest_valid_parentheses.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="033-search_in_rot_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="034-search_range_in_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="035-search_insert_pos.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="036-valid_sudoku.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="037-solve_sudoku.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="038-count_and_say.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="039-combination_sum.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="040-combination_sum_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="041-first_miss_positive.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="042-trap_rain_water.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="043-multiply_string.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="044-wildcard_match.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="045-jump_game_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="046-permutation.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="048-rotate_image.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="049-group_anagram.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="050-pow_x_n.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="051-N_queen.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="052-N-queen_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="053-max_subarray.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="054-spiral_matrix.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="055-jump_game.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="056-merge_interval.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="057-insert_interval.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="058-length_of_last_word.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="059-spiral_matrix_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="060-permutation_seq_K.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="061-rotate_list.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="062-unique_path.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="063-unique_path_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="064-min_path_sum.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="065-valid_num.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="066-plus_1.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="067-add_binary.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="068-text_justification.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="069-sqrt_x.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="070-climb_stair.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="071-simplify_path.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="072-edit_distance.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="073-set_matrix_zeroes.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="074-search_2D_matrix.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="075-sort_color.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="076-min_window_substr.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="077-combinations.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="078-subsets.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="079-word_search.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="080-remove_duplicate_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="081-search_in_rot_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="082-remove_duplicate_list_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="083-remove_duplicate_list.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="084-largest_rect_in_hist.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="085-max_rect.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="086-partition_list.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="088-merge_sorted_array.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="089-gray_code.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="090-subset_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="091-decode_ways.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="092-reverse_linked_list_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="093-restore_IP_address.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="094-binary_tree_inorder_traversal.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="095-unique_bst_2.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="096-unique_bst.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="097-interleave_string.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="098-validate_bst.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="099-recovery_bst.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="100-same_tree.cpp">
+      <Filter>001-100</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

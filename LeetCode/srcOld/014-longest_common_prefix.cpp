@@ -1,38 +1,49 @@
-﻿#include <vector>
-#include <string>
-#include <iostream>
-using namespace std;
+﻿#include "leetcode.hpp"
 
-string lcp(vector<string> const& strs)
+/* 14. 最长公共前缀
+
+编写一个函数来查找字符串数组中的最长公共前缀。
+
+如果不存在公共前缀，返回空字符串 ""。
+
+示例 1:
+输入: ["flower","flow","flight"]
+输出: "fl"
+
+示例 2:
+输入: ["dog","racecar","car"]
+输出: ""
+解释: 输入不存在公共前缀。
+
+说明:
+所有输入只包含小写字母 a-z 。
+*/
+
+string longestCommonPrefix(vector<string>& A)
 {
-	string ans;
-	size_t i, j, sz2, sz1 = strs.size();
-	if (sz1 == 0u)
-		return ans;
-	ans = strs[0];
-	for (i = 1u; i < sz1; i++)
+	int len = static_cast<int>(A.size());
+	if (len < 1)
+		return string();
+	int ans = static_cast<int>(A[0].length());
+	for (int i = 1; i < len; ++i)
 	{
-		sz2 = strs[i].size(); j = ans.size();
-		if (sz2 > j) sz2 = j;
-		for (j = 0u; j < sz2; j++)
-			if (strs[i][j] != ans[j])
+		int k = 0;
+		ans = min(ans, static_cast<int>(A[i].length()));
+		for (; k < ans; ++k)
+		{
+			if (A[0][k] != A[i][k])
 				break;
-		ans.erase(j);
+		}
+		ans = k;
 	}
-	return ans;
+	return A[0].substr(0, ans);
 }
 
 int main()
 {
-	vector<string> strs;
-	string ans;
-	while (true)
-	{
-		cin >> ans;
-		if (ans[0] == 'q') break;
-		else strs.push_back(ans);
-	}
-	ans = lcp(strs);
-	cout << ans << "\n";
-	return 0;
+	vector<string>
+		a = { "flower", "flow", "flight" },
+		b = { "dog", "racecar", "car" };
+	OutString(longestCommonPrefix(a));
+	OutString(longestCommonPrefix(b));
 }

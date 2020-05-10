@@ -1,77 +1,68 @@
-﻿#include <string>
-#include <iostream>
-#include <ctime>
+﻿#include "leetcode.hpp"
 
-/* 字符串表示的大自然数相乘 */
-/* 将短的放在前面，长的放在后面会更好 */
-/* 空串视为 0 */
-std::string multipy_string(std::string const& num1, std::string const& num2)
+/* 43. 字符串相乘
+
+给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。
+
+示例 1:
+输入: num1 = "2", num2 = "3"
+输出: "6"
+
+示例 2:
+输入: num1 = "123", num2 = "456"
+输出: "56088"
+
+说明：
+	num1 和 num2 的长度小于110。
+	num1 和 num2 只包含数字 0-9。
+	num1 和 num2 均不以零开头，除非是数字 0 本身。
+	不能使用任何标准库的大数类型（比如 BigInteger）或直接将输入转换为整数来处理。
+*/
+
+string multiply(string A, string B)
 {
-	// if (num1.length() > num2.length()) return multipy_string(num2, num1);
-	size_t const stop = (size_t)(-1);
-	size_t n1 = num1.length(), n2 = num2.length();
-	size_t len1, len2, len;
-	// 去除尾随 0
-	for (len1 = n1 - 1u; len1 != stop && num1[len1] == '0'; len1--);
-	for (len2 = n2 - 1u; len2 != stop && num2[len2] == '0'; len2--);
-	// 0 直接扔了
-	if (len1 == stop || len2 == stop) return std::string("0");
-	// 1 返回另外一个数加上尾随 0 的个数，事实证明还不如不判断直接乘……
-	size_t tail1 = n1 - len1 - 1u, tail2 = n2 - len2 - 1u;
-	if (len1 == 0u && num1[0] == '1') return num2 + std::string(tail1, '0');
-	if (len2 == 0u && num2[0] == '1') return num1 + std::string(tail2, '0');
-
-	len = len1 + len2 + 2u;
-	std::string tmp, ans(len, '\0'); tmp.reserve(n1 + n2);
-	size_t i, k, ik;
-	char const R = 10;
-	char sum, carry, c;
-	// 转为数字，因为在内层循环
-	for (i = 0u; i <= len1; i++) tmp.push_back(num1[i] - '0');
-
-	/* 乘法，string 从左向右生长 */
-	for (k = len2; k != stop; k--)
+	if (A.length() < B.length())
+		A.swap(B);
+	int a = static_cast<int>(A.length());
+	int b = static_cast<int>(B.length());
+	reverse(A.begin(), A.end());
+	reverse(B.begin(), B.end());
+	// 最多 a + b 位
+	string C(a + b, 0);
+	for (int k = 0; k < a; ++k)
+		A[k] = static_cast<char>(A[k] - '0');
+	for (int i = 0; i < b; ++i)
+		B[i] = static_cast<char>(B[i] - '0');
+	for (int i = 0; i < b; ++i)
 	{
-		c = num2[k] - '0';
-		if (c == 0) continue; // 0 就不用算了
-		carry = 0;
-		for (i = len1; i != stop; i--)
+		if (B[i] == 0)
+			continue;
+		div_t bit = { 0, 0 };
+		for (int k = 0; k < a; ++k)
 		{
-			ik = i + k + 1u;
-			sum = ans[ik] + tmp[i] * c;
-			sum += carry;
-			ans[ik] = (sum % R);
-			carry = sum / R;
+			bit.quot += C[i + k] + B[i] * A[k];
+			bit = div(bit.quot, 10);
+			C[i + k] = static_cast<char>(bit.rem);
 		}
-		ans[k] += carry;
+		for (int k = i + a; bit.quot > 0; ++k)
+		{
+			bit.quot += C[k];
+			bit = div(bit.quot, 10);
+			C[k] = static_cast<char>(bit.rem);
+		}
 	}
-
-	/* 去除前导 0，并转为字符串 */
-	tmp.clear();
-	for (i = 0u; i < len && ans[i] == '\0'; i++);
-	for (; i < len; i++)
-		tmp.push_back(ans[i] + '0');
-	tmp.resize(tmp.size() + tail1 + tail2, '0');
-	return tmp;
+	while ((C.size() > 1) && (C.back() == 0))
+		C.pop_back();
+	int c = static_cast<int>(C.length());
+	for (int i = 0; i < c; ++i)
+		C[i] = static_cast<char>(C[i] + '0');
+	reverse(C.begin(), C.end());
+	return C;
 }
 
 int main()
 {
-	typedef unsigned int uint;
-	std::string num1("99992835923793251390");
-	std::string num2("9343299879777786757734237767");
-	// 934263051865417442583022350511797181300263246130
-	std::string ans = multipy_string(num1, num2);
-	std::cout << num1 << " × " << num2 << " = " << ans << "\n";
-
-	uint i, n; std::cin >> n;
-	ans = std::string("1");
-	clock_t st = clock();
-	for (i = 2u; i <= n; i++)
-		ans = multipy_string(std::to_string(i), ans);
-	clock_t ed = clock();
-	std::cout << n << "! =\n\t" << ans << "\n";
-	std::cout << "Elapse " << (ed - st) << " clocks\n";
-	return 0;
+	OutString(multiply("2", "3"));
+	OutString(multiply("123", "456"));
+	OutString(multiply("2", "97"));
 }
-

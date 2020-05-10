@@ -1,35 +1,51 @@
 ﻿#include "leetcode.hpp"
 
-void subsets_dfs(vector<int> const& nums, int k, int const len, \
-	vector<int>& cur, vector<vector<int>>& ans)
-{
-	if (k == len)
-		return;
+/* 78. 子集
 
-	for (; k < len; ++k)
+给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
+
+说明：解集不能包含重复的子集。
+
+示例:
+
+输入: nums = [1,2,3]
+输出:
+[
+	[3],
+	[1],
+	[2],
+	[1,2,3],
+	[1,3],
+	[2,3],
+	[1,2],
+	[]
+]
+*/
+
+vector<vector<int>> subsets(vector<int>& A)
+{
+	int len = static_cast<int>(A.size());
+	vector<int> mask(len + 1);
+	vector<vector<int>> R;
+	vector<int> r;
+	for (int i = 0; i <= len; ++i)
+		mask[i] = 1 << i;
+	for (int i = 0; i < mask[len]; ++i)
 	{
-		cur.push_back(nums[k]);
-		ans.push_back(cur);
-		subsets_dfs(nums, k + 1, len, cur, ans);
-		cur.pop_back();
+		r.reserve(__builtin_popcount(i));
+		for (int b = 0; b < len; ++b)
+		{
+			if (i & mask[b])
+				r.push_back(A[b]);
+		}
+		R.push_back(move(r));
 	}
-}
-
-vector<vector<int>> subsets(vector<int>& nums)
-{
-	int const len = static_cast<int>(nums.size());
-	vector<vector<int>> ans;
-	vector<int> cur;
-	// ans.push_back(cur);
-	if (len > 0)
-		subsets_dfs(nums, 0, len, cur, ans);
-	return ans;
+	return R;
 }
 
 
 int main()
 {
-	vector<int> digits = { 1, 3, 2 };
-	vector<vector<int>> grid = subsets(digits);
-	output(grid, "subset");
+	vector<int> a = { 1, 2, 3 };
+	output(subsets(a), "Subsets");
 }

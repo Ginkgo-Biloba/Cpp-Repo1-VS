@@ -1,69 +1,113 @@
 ﻿#include "leetcode.hpp"
 
+/* 79. 单词搜索
 
-bool exist_dfs(vector<vector<char>> const& board, string const& word, \
-	string& cur, int rows, int cols, int R, int C, vector<char>& flag)
+给定一个二维网格和一个单词，找出该单词是否存在于网格中。
+
+单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。
+同一个单元格内的字母不允许被重复使用。
+
+示例:
+
+board =
+[
+	['A','B','C','E'],
+	['S','F','C','S'],
+	['A','D','E','E']
+]
+
+给定 word = "ABCCED", 返回 true
+给定 word = "SEE", 返回 true
+给定 word = "ABCB", 返回 false
+
+提示：
+	board 和 word 中只包含大写和小写英文字母。
+	1 <= board.length <= 200
+	1 <= board[i].length <= 200
+	1 <= word.length <= 10^3
+*/
+
+class Solution
 {
-	if (board[R][C] != word[cur.size()]) return false;
-	char& f = flag[R * cols + C];
-	if (f)
-		return false;
+	vector<vector<char>> board;
+	string word;
+	vector<char> visit;
+	vector<pair<int, int>> current, nextloop;
+	vector<int> cntB, cntW;
+	unsigned rows, cols, wlen;
 
-	cur.push_back(board[R][C]); f = 1;
-	if (cur == word)
-		return true;
-	if (cur.size() >= word.size())
+	unsigned at(unsigned h, unsigned w)
 	{
-		cur.pop_back(); f = 0;
+		return h * cols + w;
+	}
+
+	bool dfs(unsigned h, unsigned w, unsigned i)
+	{
+		int const dir[] = { -1, 0, 1, 0, -1 };
+		unsigned f = at(h, w);
+		bool b = false;
+		i += 1;
+		if (i == wlen)
+			return true;
+		visit[f] = 1;
+		for (int d = 0; (d < 4) && !b; ++d)
+		{
+			unsigned y = h + dir[d];
+			unsigned x = w + dir[d + 1];
+			if (y < rows && x < cols
+				&& !(visit[at(y, x)])
+				&& board[y][x] == word[i])
+				b = dfs(y, x, i);
+		}
+		visit[f] = 0;
+		return b;
+	}
+
+
+public:
+	bool exist(vector<vector<char>>& board_, string word_)
+	{
+		board = board_;
+		// board.swap(board_);
+		word.swap(word_);
+		rows = static_cast<unsigned>(board.size());
+		cols = static_cast<unsigned>(board[0].size());
+		wlen = static_cast<unsigned>(word.length());
+		cntB.assign(128, 0);
+		cntW.assign(128, 0);
+		for (unsigned i = 0; i < wlen; ++i)
+			cntW[word[i]] += 1;
+		for (unsigned h = 0; h < rows; ++h)
+			for (unsigned w = 0; w < cols; ++w)
+				cntB[board[h][w]] += 1;
+		for (unsigned i = 'A'; i <= 'z'; ++i)
+		{
+			if (cntB[i] < cntW[i])
+				return false;
+		}
+		visit.assign(rows * cols, 0);
+		for (unsigned h = 0; h < rows; ++h)
+			for (unsigned w = 0; w < cols; ++w)
+				if (board[h][w] == word[0])
+				{
+					bool b = dfs(h, w, 0);
+					if (b)
+						return true;
+				}
 		return false;
 	}
-	bool ans = false;
-
-	if (/*!ans &&*/ R + 1 < rows)
-		ans = exist_dfs(board, word, cur, rows, cols, R + 1, C, flag);
-	if (!ans && (R - 1 >= 0))
-		ans = exist_dfs(board, word, cur, rows, cols, R - 1, C, flag);
-	if (!ans && (C + 1 < cols))
-		ans = exist_dfs(board, word, cur, rows, cols, R, C + 1, flag);
-	if (!ans && (C - 1 >= 0))
-		ans = exist_dfs(board, word, cur, rows, cols, R, C - 1, flag);
-
-	if (!ans)
-	{ cur.pop_back(); f = 0; }
-	return ans;
-}
-
-bool exist(vector<vector<char>> const& board, string const& word)
-{
-	int const rows = static_cast<int>(board.size());
-	int const cols = static_cast<int>(board[0].size());
-	if (word.empty()) return false;
-	if ((rows * cols < word.size())) return false;
-	char const ch = word[0];
-	string cur;
-	bool ans = false;
-	vector<char> flag(static_cast<size_t>(rows * cols), static_cast<char>(0));
-
-	for (int r = 0; r < rows; r++)
-		for (int c = 0; c < cols; c++)
-		{
-			if (board[r][c] == ch)
-			{
-				ans = exist_dfs(board, word, cur, rows, cols, r, c, flag);
-				if (ans) return true;
-				// memset(flag.data(), 0x00, rows * cols * sizeof(char));
-			}
-		}
-
-	return false;
-}
-
+};
 
 
 int main()
 {
-	vector<vector<char>> grid = \
-		{ { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' } };
-	int ans = exist(grid, string("ABCCED"));
-	printf("%1s = %d\n", "exist", ans);
+	vector<vector<char>> a = {
+		{ 'A', 'B', 'C', 'E' },
+		{ 'S', 'F', 'C', 'S' },
+		{ 'A', 'D', 'E', 'E' },
+	};
+	Solution s;
+	OutBool(s.exist(a, "ABCCED"));
+	OutBool(s.exist(a, "SEE"));
+	OutBool(s.exist(a, "ABCB"));
 }
