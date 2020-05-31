@@ -2647,6 +2647,156 @@
     <ClCompile Include="220-contain_duplicate_3.cpp">
       <Filter>201-300</Filter>
     </ClCompile>
+    <ClCompile Include="221-max_square.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="222-count_complete_tree_node.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="223-rect_area.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="224-basic_calculator.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="225-impl_stack_using_queue.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="226-invert_bt.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="227-basic_calculator_2.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="228-summary_range.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="229-majority_elem_2.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="230-kth_smallest_elem_in_bt.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="231-power_of_two.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="232-impl_queue_using_stack.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="233-num_of_digit_one.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="234-palindrome_linked_list.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="235-lca_of_bst_node.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="236-lca_of_bt_node.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="238-product_except_self.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="239-slide_window_max.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="240-search_2d_matrix_2.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="241-diff_way_add_parenthesis.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="242-valid_anagram.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="1458-max_dotprod_2_subarray.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="257-bt_path.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="258-add_digit.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="260-single_num_3.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="263-ugly_num.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="264-ugly_num_2.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="268-missing_num.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="273-num_to_english.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="274-H_index.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="275-H_index_2.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="278-first_bad_version.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="279-perfect_square.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="283-move_zero.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="284-peeking_iterator.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="287-find_duplicated_num.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="289-game_of_life.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="290-word_pattern.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="292-nim_game.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="295-median_from_data_stream.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="297-serialize_deserialize_bt.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="299-bull_and_cow.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="300-long_increse_subseq.cpp">
+      <Filter>201-300</Filter>
+    </ClCompile>
+    <ClCompile Include="301-remove_invalid_parenthesis.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="303-range_sum_query_immutable.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="304-range_sum_2d_immutable.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="306-additive_num.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="307-range_sum_query_mutable.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="309-buy_sell_stock_cooldown.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="310-min_height_tree.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
