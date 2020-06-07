@@ -2797,6 +2797,129 @@
     <ClCompile Include="310-min_height_tree.cpp">
       <Filter>301-400</Filter>
     </ClCompile>
+    <ClCompile Include="312-burst_balloon.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="313-super_ugly_num.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="315-count_small_num_after_self.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="316-remove_dup_letter.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="318-max_prod_word_len.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="319-bulb_switcher.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="321-create_max_num.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="322-coin_change.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="324-wiggle_sort_2.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="326-power_of_three.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="327-count_range_sum.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="328-odd_even_list.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="329-longest_inc_path_in_matrix.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="330-patch_array.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="331-verify_preorder_bt.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="332-reconstruct_itinerary.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="334-inc_triplet_subseq.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="335-self_cross.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="336-palindrome_pair.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="337-house_robber_3.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="338-count_bit.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="341-flatten_nested_list_iter.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="342-power_of_4.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="343-integer_break.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="344-reverse_string.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="345-reverse_vowel_in_str.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="347-top_K_freq_elem.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="349-intersection_of_2_array.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="350-intersection_of_2_array_2.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="352-data_stream_disjoint_interval.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="354-russian_doll_envelope.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="357-count_num_with_unique_digit.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="363-max_rect_sum_no_larger_than_K.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="365-water_and_jug.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="367-valid_perfect_square.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="368-largest_divisible_subset.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="371-sum_of_2_integer.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="372-super_pow.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="373-find_K_pair_with_smallest_sum.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="374-guess_num.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
+    <ClCompile Include="375-guess_num_2.cpp">
+      <Filter>301-400</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
