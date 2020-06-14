@@ -11,12 +11,14 @@
 请返回能够落在 任意 半径为 r 的圆形靶内或靶上的最大飞镖数。
 
 示例 1：
+https://assets.leetcode.com/uploads/2020/04/29/sample_1_1806.png
 https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/05/16/sample_1_1806.png
 输入：points = [[-2,0],[2,0],[0,2],[0,-2]], r = 2
 输出：4
 解释：如果圆形的飞镖靶的圆心为 (0,0) ，半径为 2 ，所有的飞镖都落在靶上，此时落在靶上的飞镖数最大，值为 4 。
 
 示例 2：
+https://assets.leetcode.com/uploads/2020/04/29/sample_2_1806.png
 https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/05/16/sample_2_1806.png
 输入：points = [[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]], r = 5
 输出：5
@@ -38,9 +40,12 @@ points[i].length == 2
 */
 
 
-class Solution
+class Solution1
 {
-	struct Point { int x, y, n; };
+	struct Point
+	{
+		int x, y, n;
+	};
 
 	int len, ans;
 	double rsq;
@@ -99,6 +104,7 @@ public:
 				double hd = hx * hx + hy * hy;
 				if (hd > rsq)
 					continue;
+				// 垂直平分线的中点
 				double ox = (x0 + x1) * 0.5;
 				double oy = (y0 + y1) * 0.5;
 				// 垂直平分线上的偏移距离
@@ -112,6 +118,67 @@ public:
 				count(ox - dy, oy + dx);
 			}
 		}
+		return ans;
+	}
+};
+
+
+// https://www.geeksforgeeks.org/angular-sweep-maximum-points-can-enclosed-circle-given-radius/
+// 抄的
+class Solution
+{
+	typedef std::complex<double> point2d;
+
+	double dis[100][100];
+	vector<pair<double, int>> angle;
+	vector<vector<int>> src;
+	int len, ans;
+	double dia;
+
+	void inside(int i)
+	{
+		angle.clear();
+		for (int k = 0; k < len; ++k)
+			if ((i != k) && (dis[k][i] <= dia))
+			{
+				double dx = src[k][0] - src[i][0];
+				double dy = src[k][1] - src[i][1];
+				double A = atan2(dy, dx);
+				double B = acos(dis[k][i] / dia);
+				// 必须先进来再出去
+				angle.emplace_back(A - B, -1);
+				angle.emplace_back(A + B, +1);
+			}
+		sort(angle.begin(), angle.end());
+
+		int cur = 1;
+		for (auto& a : angle)
+		{
+			cur -= a.second;
+			ans = max(ans, cur);
+		}
+	}
+
+public:
+	int numPoints(vector<vector<int>>& points, int r)
+	{
+		src.swap(points);
+		dia = 2.0 * r;
+		len = static_cast<int>(src.size());
+		for (int i = 0; i < len; ++i)
+		{
+			dis[i][i] = 0;
+			for (int k = i + 1; k < len; ++k)
+			{
+				double dx = src[k][0] - src[i][0];
+				double dy = src[k][1] - src[i][1];
+				dis[i][k] = dis[k][i] = hypot(dx, dy);
+			}
+		}
+
+		ans = !!(len);
+		for (int i = 0; i < len; ++i)
+			inside(i);
 		return ans;
 	}
 };

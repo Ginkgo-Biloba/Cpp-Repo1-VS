@@ -32,7 +32,7 @@
 	-1000 <= nums1[i], nums2[i] <= 100
 */
 
-int maxDotProduct(vector<int>& A, vector<int>& B)
+int maxDotProduct1(vector<int>& A, vector<int>& B)
 {
 	int alen = static_cast<int>(A.size());
 	int blen = static_cast<int>(B.size());
@@ -56,6 +56,31 @@ int maxDotProduct(vector<int>& A, vector<int>& B)
 	return ans;
 }
 
+
+// https://leetcode.com/problems/max-dot-product-of-two-subsequences/discuss/648420/JavaC%2B%2BPython-the-Longest-Common-Sequence
+// 抄的
+int maxDotProduct(vector<int>& A, vector<int>& B)
+{
+	int alen = static_cast<int>(A.size());
+	int blen = static_cast<int>(B.size());
+	vector<int> pre(blen), cur(blen);
+	for (int a = 0; a < alen; ++a)
+	{
+		pre.swap(cur);
+		for (int b = 0; b < blen; ++b)
+		{
+			cur[b] = A[a] * B[b];
+			// 这里必须先左上角判断以防用新的值
+			if (a > 0 && b > 0)
+				cur[b] = max(cur[b], cur[b] + pre[b - 1]);
+			if (a > 0)
+				cur[b] = max(cur[b], pre[b]);
+			if (b > 0)
+				cur[b] = max(cur[b], cur[b - 1]);
+		}
+	}
+	return cur[blen - 1];
+}
 
 int main()
 {

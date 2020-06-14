@@ -1,6 +1,6 @@
 ﻿#include "leetcode.hpp"
 
-/* 
+/*
 
 
 */
@@ -41,6 +41,19 @@ struct ListNode
 	{}
 };
 
+unsigned popcnt(unsigned n)
+{
+#if defined _MSC_VER1
+	return __popcnt(n);
+#elif defined __GNUC__
+	return __builtin_popcount(n);
+#else
+	n = n - ((n >> 1) & 0x55555555);
+	n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
+	n = (n + (n >> 4)) & 0x0f0f0f0f;
+	n = n + (n >> 8);
+	n = n + (n >> 16);
+	return n & 0x3f;
+#endif
+}
 
-int main()
-{}

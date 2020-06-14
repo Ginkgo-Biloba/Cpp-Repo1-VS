@@ -60,6 +60,7 @@ void output(vector<int> const& vec, char const* info = nullptr)
 	for (int i : vec)
 		printf("%d, ", i);
 	printf("\n");
+	fflush(NULL);
 }
 
 void output(vector<vector<int>> const& mat, char const* info = nullptr)
@@ -78,4 +79,5 @@ void output(vector<string> const& vec,
 	for (string const& s : vec)
 		printf("%s%s", s.c_str(), delimit);
 	printf("\n");
+	fflush(NULL);
 }
