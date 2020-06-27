@@ -615,7 +615,17 @@
     <ClCompile Include="1473-paint_house_3.cpp" />
     <ClCompile Include="1475-final_price_with_special_discount.cpp" />
     <ClCompile Include="1476-subrect_query.cpp" />
+    <ClCompile Include="1477-find_2_non_overlap_subarray_with_target_sum.cpp" />
+    <ClCompile Include="1478-allocate_mailbox.cpp" />
     <ClCompile Include="148-sort_list_nlogn.cpp" />
+    <ClCompile Include="1480-run_sum_of_array.cpp" />
+    <ClCompile Include="1481-least_num_of_unique_int_after_K_rm.cpp" />
+    <ClCompile Include="1482-min_days_to_make_bouquet.cpp" />
+    <ClCompile Include="1483-Kth_ancestor_of_tree_node.cpp" />
+    <ClCompile Include="1486-xor_op_in_array.cpp" />
+    <ClCompile Include="1487-make_file_name_unique.cpp" />
+    <ClCompile Include="1488-avoid_flood_in_city.cpp" />
+    <ClCompile Include="1489-find_critical_edge_in_mst.cpp" />
     <ClCompile Include="149-max_points_on_line.cpp" />
     <ClCompile Include="150-eval_reverse_polish_notation.cpp" />
     <ClCompile Include="151-reverse_word_in_string.cpp" />

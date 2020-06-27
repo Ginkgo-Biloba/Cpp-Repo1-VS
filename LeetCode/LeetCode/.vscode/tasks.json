@@ -22,7 +22,7 @@
 				"-Wno-char-subscripts",
 				// "-fsanitize=undefined",
 				// "-fsanitize=address",
-				// "-Og",
+				// "-O1",
 				"-ggdb",
 				"${fileBasename}",
 				"-o",

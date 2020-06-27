@@ -3028,6 +3028,36 @@
     <ClCompile Include="1476-subrect_query.cpp">
       <Filter>1401-1500</Filter>
     </ClCompile>
+    <ClCompile Include="1477-find_2_non_overlap_subarray_with_target_sum.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1478-allocate_mailbox.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1480-run_sum_of_array.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1481-least_num_of_unique_int_after_K_rm.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1482-min_days_to_make_bouquet.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1483-Kth_ancestor_of_tree_node.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1486-xor_op_in_array.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1487-make_file_name_unique.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1488-avoid_flood_in_city.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1489-find_critical_edge_in_mst.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
