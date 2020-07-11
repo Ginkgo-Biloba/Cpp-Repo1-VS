@@ -50,6 +50,9 @@
     <Filter Include="1401-1500">
       <UniqueIdentifier>{44ee0a2a-fd44-4d4d-a2aa-33cb3945b564}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1501-1600">
+      <UniqueIdentifier>{866603cf-0440-45a6-a9d1-547982410831}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="376-wiggle_subseq.cpp">
@@ -3057,6 +3060,42 @@
     </ClCompile>
     <ClCompile Include="1489-find_critical_edge_in_mst.cpp">
       <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1491-average_salary_exclude_minmax.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1492-kth_factor.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1493-longest_subary_1_after_delete_one_elem.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1494-parallel_courses_2.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1496-path_cross.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1497-check_if_array_pairs_div_by_k.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1498_num_subseq_given_sum_cond.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1499-max_val_of_equation.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1502-make_arithmetic_progression.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1503-last_moment_ant_fall.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1504-count_submatrix_with_all_1.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1505-min_integer_at_most_K_adj_swap.cpp">
+      <Filter>1501-1600</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

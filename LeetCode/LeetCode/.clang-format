@@ -28,5 +28,4 @@ AllowShortLoopsOnASingleLine : true
 
 MaxEmptyLinesToKeep : 2
 KeepEmptyLinesAtTheStartOfBlocks : false
-
 ...

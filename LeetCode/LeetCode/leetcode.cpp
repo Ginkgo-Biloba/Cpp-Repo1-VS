@@ -43,17 +43,27 @@ struct ListNode
 
 unsigned popcnt(unsigned n)
 {
-#if defined _MSC_VER1
+#if defined _MSC_VER
 	return __popcnt(n);
 #elif defined __GNUC__
 	return __builtin_popcount(n);
 #else
+	// https://zhuanlan.zhihu.com/p/70950198
 	n = n - ((n >> 1) & 0x55555555);
 	n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
 	n = (n + (n >> 4)) & 0x0f0f0f0f;
-	n = n + (n >> 8);
-	n = n + (n >> 16);
-	return n & 0x3f;
+	n = (n * 0x1010101) >> 24;
+	return n;
 #endif
 }
 
+
+int main()
+{
+	for (int i = 0; i < 64; ++i)
+	{
+		printf("%3d: %d,  ", i, popcnt(i));
+		if ((i & 7) == 7)
+			printf("\n");
+	}
+}
