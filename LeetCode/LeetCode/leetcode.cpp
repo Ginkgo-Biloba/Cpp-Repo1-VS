@@ -48,7 +48,6 @@ unsigned popcnt(unsigned n)
 #elif defined __GNUC__
 	return __builtin_popcount(n);
 #else
-	// https://zhuanlan.zhihu.com/p/70950198
 	n = n - ((n >> 1) & 0x55555555);
 	n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
 	n = (n + (n >> 4)) & 0x0f0f0f0f;
