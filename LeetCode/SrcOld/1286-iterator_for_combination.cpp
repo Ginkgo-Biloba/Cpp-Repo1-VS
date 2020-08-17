@@ -24,55 +24,55 @@ iterator.hasNext(); // 返回 false
 	题目保证每次调用函数 next 时都存在下一个字母组合。
 */
 
-// https://leetcode-cn.com/problems/iterator-for-combination/solution/er-jin-zhi-bian-ma-bu-yong-qiu-chu-quan-pai-lie-by/
+
+// https://docs.python.org/3/library/itertools.html#itertools.combinations
 // 抄的
 class CombinationIterator
 {
-	string S;
-	int len, comb, flag;
-
-	int popcnt(int x)
-	{
-		// 其实 v 只有 16 位
-		x = (x & UINT32_C(0x55555555)) + ((x >> 1) & UINT32_C(0x55555555));
-		x = (x & UINT32_C(0x33333333)) + ((x >> 2) & UINT32_C(0x33333333));
-		x = (x & UINT32_C(0x0f0f0f0f)) + ((x >> 4) & UINT32_C(0x0f0f0f0f));
-		x = (x & UINT32_C(0x00ff00ff)) + ((x >> 8) & UINT32_C(0x00ff00ff));
-		x = (x & UINT32_C(0x0000ffff)) + ((x >> 16) & UINT32_C(0x0000ffff));
-		return x;
-	}
+	// dst 存储下一个返回值，为了 O(1) 检索 next
+	string src, dst;
+	int len, sel;
+	vector<int> idx;
 
 public:
 	CombinationIterator(string characters, int combinationLength)
 	{
-		S.swap(characters);
-		len = static_cast<int>(S.size());
-		sort(S.begin(), S.end());
-		reverse(S.begin(), S.end());
-		comb = combinationLength;
-		flag = ((1 << comb) - 1) << (len - comb);
+		src.swap(characters);
+		len = static_cast<int>(src.size());
+		sort(src.begin(), src.end());
+		sel = combinationLength;
+		idx.resize(sel);
+		for (int i = 0; i < sel; ++i)
+			idx[i] = i;
+		dst = src.substr(0, sel);
 	}
 
 	string next()
 	{
-		string T;
-		while (flag > 0 && popcnt(flag) != comb)
-			--flag;
-		for (int i = 0; i < len; ++i)
+		string ans = dst;
+		dst.clear();
+
+		int i = sel - 1;
+		for (; i >= 0; --i)
 		{
-			if (flag & (1 << i))
-				T.push_back(S[i]);
+			if (idx[i] != i + len - sel)
+				break;
 		}
-		--flag;
-		reverse(T.begin(), T.end());
-		return T;
+		if (i >= 0)
+		{
+			idx[i] += 1;
+			for (int k = i + 1; k < sel; ++k)
+				idx[k] = idx[k - 1] + 1;
+			for (i = 0; i < sel; ++i)
+				dst.push_back(src[idx[i]]);
+		}
+
+		return ans;
 	}
 
 	bool hasNext()
 	{
-		while (flag > 0 && popcnt(flag) != comb)
-			--flag;
-		return flag > 0;
+		return !(dst.empty());
 	}
 };
 

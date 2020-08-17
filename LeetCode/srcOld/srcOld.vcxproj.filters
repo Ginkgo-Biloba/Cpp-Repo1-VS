@@ -646,15 +646,6 @@
     <ClCompile Include="767-reorganize_string.cpp">
       <Filter>701-800</Filter>
     </ClCompile>
-    <ClCompile Include="769-max_chunks_to_make_sorted.cpp">
-      <Filter>701-800</Filter>
-    </ClCompile>
-    <ClCompile Include="771-jewels_and_stones.cpp">
-      <Filter>701-800</Filter>
-    </ClCompile>
-    <ClCompile Include="775-global_local_inversions.cpp">
-      <Filter>701-800</Filter>
-    </ClCompile>
     <ClCompile Include="777-swap_adj_LR_string.cpp">
       <Filter>701-800</Filter>
     </ClCompile>
@@ -1108,9 +1099,6 @@
     <ClCompile Include="946-validate_stack_sequences.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
-    <ClCompile Include="947-most_stones_removed.cpp">
-      <Filter>901-1000</Filter>
-    </ClCompile>
     <ClCompile Include="949-largest_time_digits.cpp">
       <Filter>901-1000</Filter>
     </ClCompile>
@@ -1327,9 +1315,6 @@
     <ClCompile Include="1031-max_sum_of_2_subarray.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
-    <ClCompile Include="1033-move_stones_until_consecutive.cpp">
-      <Filter>1001-1100</Filter>
-    </ClCompile>
     <ClCompile Include="1047-remove_all_adjacent_duplicates.cpp">
       <Filter>1001-1100</Filter>
     </ClCompile>
@@ -1484,9 +1469,6 @@
       <Filter>1101-1200</Filter>
     </ClCompile>
     <ClCompile Include="1139-largest_1bordered_square.cpp">
-      <Filter>1101-1200</Filter>
-    </ClCompile>
-    <ClCompile Include="1140-stone_gamme_2.cpp">
       <Filter>1101-1200</Filter>
     </ClCompile>
     <ClCompile Include="1143-longest_common_subseq.cpp">
@@ -2020,9 +2002,6 @@
     <ClCompile Include="1403-min_subseq_in_non_inc_order.cpp">
       <Filter>1401-1500</Filter>
     </ClCompile>
-    <ClCompile Include="1402-reducing_dishes.cpp">
-      <Filter>1401-1500</Filter>
-    </ClCompile>
     <ClCompile Include="1408-string_match_in_array.cpp">
       <Filter>1401-1500</Filter>
     </ClCompile>
@@ -2141,9 +2120,6 @@
       <Filter>001-100</Filter>
     </ClCompile>
     <ClCompile Include="024-swap_node_in_paris.cpp">
-      <Filter>001-100</Filter>
-    </ClCompile>
-    <ClCompile Include="025-reverse_nodes_in_K_group.cpp">
       <Filter>001-100</Filter>
     </ClCompile>
     <ClCompile Include="026-remove_duplicate_from_sorted_array.cpp">
@@ -2501,9 +2477,6 @@
       <Filter>101-200</Filter>
     </ClCompile>
     <ClCompile Include="148-sort_list_nlogn.cpp">
-      <Filter>101-200</Filter>
-    </ClCompile>
-    <ClCompile Include="149-max_points_on_line.cpp">
       <Filter>101-200</Filter>
     </ClCompile>
     <ClCompile Include="150-eval_reverse_polish_notation.cpp">
@@ -3076,9 +3049,6 @@
     <ClCompile Include="1496-path_cross.cpp">
       <Filter>1401-1500</Filter>
     </ClCompile>
-    <ClCompile Include="1497-check_if_array_pairs_div_by_k.cpp">
-      <Filter>1401-1500</Filter>
-    </ClCompile>
     <ClCompile Include="1498_num_subseq_given_sum_cond.cpp">
       <Filter>1401-1500</Filter>
     </ClCompile>
@@ -3131,6 +3101,108 @@
       <Filter>1501-1600</Filter>
     </ClCompile>
     <ClCompile Include="1521-find_val_of_mysterious_func_close_to_target.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1523-count_odd_num_in_interval.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1524-num_of_subarray_with_odd_sum.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1525-num_of_good_way_to_spllt_str.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1526-min_num_inc_on_subarray_form_target_array.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1528-shuffle_str.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1529-bulb_switcher_4.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1530-num_of_good_leaf_pair.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1531-str_compress_2.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1534-count_good_triplet.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1535-find_winner_of_array_game.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1536-min_swap_arrange_binary_grid.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1537-get_max_score.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="771-jewel_and_stone.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="769-max_chunk_to_make_sorted.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="775-global_local_inversion.cpp">
+      <Filter>701-800</Filter>
+    </ClCompile>
+    <ClCompile Include="947-most_stone_removed.cpp">
+      <Filter>901-1000</Filter>
+    </ClCompile>
+    <ClCompile Include="1033-move_stone_until_consecutive.cpp">
+      <Filter>1001-1100</Filter>
+    </ClCompile>
+    <ClCompile Include="1140-stone_game_2.cpp">
+      <Filter>1101-1200</Filter>
+    </ClCompile>
+    <ClCompile Include="025-reverse_node_in_K_group.cpp">
+      <Filter>001-100</Filter>
+    </ClCompile>
+    <ClCompile Include="149-max_point_on_line.cpp">
+      <Filter>101-200</Filter>
+    </ClCompile>
+    <ClCompile Include="1497-check_if_array_pair_div_by_k.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1402-reducing_dish.cpp">
+      <Filter>1401-1500</Filter>
+    </ClCompile>
+    <ClCompile Include="1539-kth_missing_positive_num.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1540-can_cvt_str_in_K_move.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1541-min_insert_balance_parenthesis.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1542-find_longest_awesome_substr.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1544-make_str_great.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1545-find_Kth_bit_in_Nth_bin_str.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1546-max_non_overlap_subarray_sum_eq_target.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1547-min_cost_cut_stick.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1550-three_consecutive_odd.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1551-min_op_make_array_eq.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1552-magnetic_force_between_two_ball.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1553-min_day_to_eat_N_orange.cpp">
       <Filter>1501-1600</Filter>
     </ClCompile>
   </ItemGroup>

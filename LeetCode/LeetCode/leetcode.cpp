@@ -24,9 +24,7 @@ struct TreeNode
 	TreeNode* left;
 	TreeNode* right;
 	TreeNode(int x)
-		: val(x)
-		, left(NULL)
-		, right(NULL)
+		: val(x), left(NULL), right(NULL)
 	{}
 };
 
@@ -36,8 +34,7 @@ struct ListNode
 	int val;
 	ListNode* next;
 	ListNode(int x)
-		: val(x)
-		, next(NULL)
+		: val(x), next(NULL)
 	{}
 };
 
@@ -56,13 +53,3 @@ unsigned popcnt(unsigned n)
 #endif
 }
 
-
-int main()
-{
-	for (int i = 0; i < 64; ++i)
-	{
-		printf("%3d: %d,  ", i, popcnt(i));
-		if ((i & 7) == 7)
-			printf("\n");
-	}
-}
