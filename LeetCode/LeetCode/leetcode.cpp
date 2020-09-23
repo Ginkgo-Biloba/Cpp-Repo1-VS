@@ -53,3 +53,44 @@ unsigned popcnt(unsigned n)
 #endif
 }
 
+
+class SegTree
+{
+	vector<int> sum;
+	int len;
+
+	int lowbit(int i)
+	{
+		return i & (-i);
+	}
+
+public:
+	SegTree(int n)
+	{
+		len = n + 1;
+		sum.resize(len);
+	}
+
+	void update(int i, int x)
+	{
+		++i;
+		for (; i < len; i += lowbit(i))
+			sum[i] += x;
+	}
+
+	int get(int i)
+	{
+		// 需要 +1 要不 0 那里退不出去循环
+		++i;
+		int r = 0;
+		for (; i > 0; i -= lowbit(i))
+			r += sum[i];
+		return r;
+	}
+};
+
+
+int main()
+{
+
+}

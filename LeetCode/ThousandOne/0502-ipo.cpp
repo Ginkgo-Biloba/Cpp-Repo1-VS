@@ -7,8 +7,10 @@
 由于资源有限，它只能在 IPO 之前完成最多 k 个不同的项目。
 帮助 力扣 设计完成最多 k 个不同项目后得到最大总资本的方式。
 
-给定若干个项目。对于每个项目 i，它都有一个纯利润 Pi，并且需要最小的资本 Ci 来启动相应的项目。
-最初，你有 W 资本。当你完成一个项目时，你将获得纯利润，且利润将被添加到你的总资本中。
+给定若干个项目。
+对于每个项目 i，它都有一个纯利润 Pi，并且需要最小的资本 Ci 来启动相应的项目。
+最初，你有 W 资本。
+当你完成一个项目时，你将获得纯利润，且利润将被添加到你的总资本中。
 
 总而言之，从给定项目中选择最多 k 个不同项目的列表，以最大化最终资本，并输出最终可获得的最多资本。
 
@@ -26,9 +28,9 @@
 因此，输出最后最大化的资本，为 0 + 1 + 3 = 4。
 
 注意:
-		假设所有输入数字都是非负整数。
-		表示利润和资本的数组的长度不超过 50000。
-		答案保证在 32 位有符号整数范围内。
+	假设所有输入数字都是非负整数。
+	表示利润和资本的数组的长度不超过 50000。
+	答案保证在 32 位有符号整数范围内。
 */
 
 // https://leetcode.com/problems/ipo/discuss/98213/8-liner-C++-42ms-beat-98-greedy-algorithm-(detailed-explanation)/102569
@@ -44,8 +46,7 @@ struct node
 };
 
 int findMaximizedCapital(int k, int W,
-	vector<int>& profits,
-	vector<int>& capital)
+	vector<int>& profits, vector<int>& capital)
 {
 	vector<node> allpc;
 	size_t len = profits.size();
