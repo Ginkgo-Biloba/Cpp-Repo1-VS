@@ -57,9 +57,14 @@ void output(vector<int> const& vec, char const* info = nullptr)
 {
 	if (info)
 		printf("----- %s -----\n", info);
-	for (int i : vec)
-		printf("%d, ", i);
-	printf("\n");
+	if (vec.empty())
+		puts("<empty>");
+	else
+	{
+		for (int i : vec)
+			printf("%d, ", i);
+		printf("\n");
+	}
 	fflush(NULL);
 }
 
@@ -77,7 +82,26 @@ void output(vector<string> const& vec,
 	if (info)
 		printf("----- %s -----\n", info);
 	for (string const& s : vec)
-		printf("%s%s", s.c_str(), delimit);
+	{
+		if (s.empty())
+			printf("<empty>%s", delimit);
+		else
+			printf("%s%s", s.c_str(), delimit);
+	}
 	printf("\n");
 	fflush(NULL);
 }
+
+
+#if defined _MSC_VER
+inline unsigned __builtin_popcount(unsigned n)
+{
+	return __popcnt(n);
+	// n = n - ((n >> 1) & 0x55555555);
+	// n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
+	// n = (n + (n >> 4)) & 0x0f0f0f0f;
+	// n = (n * 0x1010101) >> 24;
+	// return n;
+}
+#endif
+

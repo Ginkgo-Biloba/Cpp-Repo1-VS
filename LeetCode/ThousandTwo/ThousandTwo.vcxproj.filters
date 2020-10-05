@@ -27,6 +27,9 @@
     <Filter Include="1501-1600">
       <UniqueIdentifier>{56abfadc-ebb8-4ae0-b714-ab1b578e24c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1601-1700">
+      <UniqueIdentifier>{5cf7e19b-efbe-4470-809f-9c1e6be66b41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
@@ -1239,6 +1242,42 @@
     </ClCompile>
     <ClCompile Include="1594-max_non_negative_prod_in_mat.cpp">
       <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1598-crawler_log_folder.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1599-max_profit_of_centennial_wheel.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1600-throne_inheritance.cpp">
+      <Filter>1501-1600</Filter>
+    </ClCompile>
+    <ClCompile Include="1601-max_num_of_achievable_transfer_request.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1603-design_parking_sys.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1604-alert_same_key_card_3+_times_in_1h.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1605-find_valid_mat_given_row_col_sum.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1606-find_server_handled_most_request.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1608-special_array_with_x_elem_greater_equal_x.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1609-even_odd_tree.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1610-max_num_visible_point.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1611-min_one_bit_op_make_zero.cpp">
+      <Filter>1601-1700</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

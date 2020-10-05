@@ -91,3 +91,17 @@ void output(vector<string> const& vec,
 	printf("\n");
 	fflush(NULL);
 }
+
+
+#if defined _MSC_VER
+inline unsigned __builtin_popcount(unsigned n)
+{
+	return __popcnt(n);
+	// n = n - ((n >> 1) & 0x55555555);
+	// n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
+	// n = (n + (n >> 4)) & 0x0f0f0f0f;
+	// n = (n * 0x1010101) >> 24;
+	// return n;
+}
+#endif
+

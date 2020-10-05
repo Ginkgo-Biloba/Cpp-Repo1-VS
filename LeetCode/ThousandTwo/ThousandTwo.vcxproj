@@ -555,6 +555,18 @@
     <ClCompile Include="1593-split_str_to_max_num_unique_substr.cpp" />
     <ClCompile Include="1594-max_non_negative_prod_in_mat.cpp" />
     <ClCompile Include="1595-min_cost_connect_two_group_point.cpp" />
+    <ClCompile Include="1598-crawler_log_folder.cpp" />
+    <ClCompile Include="1599-max_profit_of_centennial_wheel.cpp" />
+    <ClCompile Include="1600-throne_inheritance.cpp" />
+    <ClCompile Include="1601-max_num_of_achievable_transfer_request.cpp" />
+    <ClCompile Include="1603-design_parking_sys.cpp" />
+    <ClCompile Include="1604-alert_same_key_card_3+_times_in_1h.cpp" />
+    <ClCompile Include="1605-find_valid_mat_given_row_col_sum.cpp" />
+    <ClCompile Include="1606-find_server_handled_most_request.cpp" />
+    <ClCompile Include="1608-special_array_with_x_elem_greater_equal_x.cpp" />
+    <ClCompile Include="1609-even_odd_tree.cpp" />
+    <ClCompile Include="1610-max_num_visible_point.cpp" />
+    <ClCompile Include="1611-min_one_bit_op_make_zero.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
