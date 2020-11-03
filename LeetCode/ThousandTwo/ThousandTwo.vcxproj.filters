@@ -1279,5 +1279,77 @@
     <ClCompile Include="1611-min_one_bit_op_make_zero.cpp">
       <Filter>1601-1700</Filter>
     </ClCompile>
+    <ClCompile Include="1614-max_nest_depth_parentheses.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1615-max_network_rank.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1616-split_two_string_make_palindrome.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1617-count_subtree_with_max_dist.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1619-mean_of_array_after_remove_elem.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1620-coord_with_max_network_quality.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1621-num_of_set_K_non_overlap_line_seg.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1622-fancy_sequence.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1624-large_substr_between_equal_char.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1625-lexcio_small_string_after_op.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1626-best_team_with_no_conflict.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1627-graph_connectivity_with_threshold.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1629-slowest_key.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1630-arithmetic_subarray.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1631-path_with_min_effort.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1632-rank_transform_of_matrix.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1636-sort_by_inc_freq.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1637-widest_vertical_area_between_point.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1638-count_substr_differ_by_one_char.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1639-way_to_form_string_given_dict.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1640-check_array_formation_through_concat.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1641-count_sorted_vowel_string.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1642-furthest_building_can_reach.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1643-kth_smallest_instruction.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
