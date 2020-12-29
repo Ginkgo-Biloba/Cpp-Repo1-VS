@@ -1,5 +1,5 @@
 {
-	"python.pythonPath": "C:\\instapp\\Miniconda3\\envs\\py35\\python.exe",
+	"python.pythonPath": "C:\\instapp\\Miniconda3\\envs\\py37\\python.exe",
 	"files.associations": {
 		"array": "cpp"
 	}

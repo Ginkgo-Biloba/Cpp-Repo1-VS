@@ -50,15 +50,16 @@ class SegTree
 	}
 
 public:
-	SegTree(int n)
+	SegTree(int size)
 	{
-		len = n + 1;
+		len = size + 1;
 		sum.resize(len);
 	}
 
 	void update(int i, int x)
 	{
 		++i;
+		assert(i < len);
 		for (; i < len; i += lowbit(i))
 			sum[i] += x;
 	}
@@ -67,6 +68,7 @@ public:
 	{
 		// 需要 +1 要不 0 那里退不出去循环
 		++i;
+		assert(i < len);
 		int r = 0;
 		for (; i > 0; i -= lowbit(i))
 			r += sum[i];

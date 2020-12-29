@@ -30,6 +30,9 @@
     <Filter Include="1601-1700">
       <UniqueIdentifier>{5cf7e19b-efbe-4470-809f-9c1e6be66b41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1701-1800">
+      <UniqueIdentifier>{502b1b86-c4ff-4209-9709-cd33551869d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="leetcode.hpp">
@@ -1350,6 +1353,147 @@
     </ClCompile>
     <ClCompile Include="1643-kth_smallest_instruction.cpp">
       <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1646-get_max_in_generated_array.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1647-min_delete_make_char_freq_unique.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1648-sell_diminish_value_color_ball.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1649-create_sorted_array_through_instruction.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1652-defuse_bomb.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1653-min_delete_make_string_balanced.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1654-min_jump_reach_home.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1655-distribute_repeating_integer.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1656-design_ordered_stream.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1657-determine_if_two_string_close.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1658-min_op_reduce_x_to_zero.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1659-max_grid_happiness.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1662-check_if_two_string_array_equal.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1663-smallest_string_with_given_num.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1664-way_make_fair_array.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1665-min_initial_energy_finish_task.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1668-max_repeat_substr.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1669-merge_between_link_list.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1670-design_front_middle_back_queue.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1671-min_removal_make_mountain_array.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1672-richest_customer_wealth.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1673-find_most_competitive_subseq.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1674-min_move_make_array_complementary.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1675-min_deviation_array.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1678-goal_parser_interpretation.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1679-max_num_of_K_sum_pair.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1680-concat_consecutive_binary.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1684-count_consistent_string.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1685-sum_absdif_in_sorted_array.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1686-stone_game_6.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1687-deliver_box_from_storage_to_port.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1688-count_match_in_tournament.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1689-partition_min_num_dec-bin_num.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1690-stone_game_7.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1691-max_height_by_stack_cuboid.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1694-reformat_phone_number.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1695-max_erasure_value.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1696-jump_game_6.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1697-check_existence_edge_length_limited_path.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1700-student_unable_to_eat_lunch.cpp">
+      <Filter>1601-1700</Filter>
+    </ClCompile>
+    <ClCompile Include="1701-average_wait_time.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1702-max_binary_string_after_change.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1703-min_adj_swap_for_k_consecutive_one.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1704-determine_if_string_halves_are_alike.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1705-max_num_of_eaten_apple.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1706-where_will_the_ball_fall.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1707-max_xor_with_elem_from_array.cpp">
+      <Filter>1701-1800</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
