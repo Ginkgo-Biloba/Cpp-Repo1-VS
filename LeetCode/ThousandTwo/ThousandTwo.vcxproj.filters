@@ -1495,5 +1495,38 @@
     <ClCompile Include="1707-max_xor_with_elem_from_array.cpp">
       <Filter>1701-1800</Filter>
     </ClCompile>
+    <ClCompile Include="1723-min_time_finish_all_job.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1722-min_hamming_distance_after_swap_op.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1721-swap_node_in_linked_list.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1720-decode_xor_array.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1718-construct_lexico_largest_valid_seq.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1717-max_score_remove_substr.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1716-calculate_money_in_bank.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1713-min_op_make_subseq.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1712-way_to_split_array_into_three_subarray.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1711-count_good_meal.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1710-max_unit_on_truck.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -638,6 +638,17 @@
     <ClCompile Include="1705-max_num_of_eaten_apple.cpp" />
     <ClCompile Include="1706-where_will_the_ball_fall.cpp" />
     <ClCompile Include="1707-max_xor_with_elem_from_array.cpp" />
+    <ClCompile Include="1710-max_unit_on_truck.cpp" />
+    <ClCompile Include="1711-count_good_meal.cpp" />
+    <ClCompile Include="1712-way_to_split_array_into_three_subarray.cpp" />
+    <ClCompile Include="1713-min_op_make_subseq.cpp" />
+    <ClCompile Include="1716-calculate_money_in_bank.cpp" />
+    <ClCompile Include="1717-max_score_remove_substr.cpp" />
+    <ClCompile Include="1718-construct_lexico_largest_valid_seq.cpp" />
+    <ClCompile Include="1720-decode_xor_array.cpp" />
+    <ClCompile Include="1721-swap_node_in_linked_list.cpp" />
+    <ClCompile Include="1722-min_hamming_distance_after_swap_op.cpp" />
+    <ClCompile Include="1723-min_time_finish_all_job.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
