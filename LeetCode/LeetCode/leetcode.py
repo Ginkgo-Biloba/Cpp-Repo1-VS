@@ -4,6 +4,7 @@ import itertools
 
 
 class Solution:
+
 	def minAreaFreeRect(self, points: List[List[int]]) -> float:
 		points.sort()
 		cpx = [complex(*z) for z in points]
@@ -29,4 +30,3 @@ print(s.minAreaFreeRect(a))
 print(s.minAreaFreeRect(b))
 print(s.minAreaFreeRect(c))
 print(s.minAreaFreeRect(d))
-

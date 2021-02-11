@@ -1528,5 +1528,74 @@
     <ClCompile Include="1710-max_unit_on_truck.cpp">
       <Filter>1701-1800</Filter>
     </ClCompile>
+    <ClCompile Include="1725-num_rect_can_form_largest_squre.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1745-palindrome_partitioning_4.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1744-eat_favorite_candy_on_favorite_day.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1743-restore_array_from_adj_pair.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1742-max_num_ball_in_box.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1739-building_box.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1738-kth_largest_xor_coordinate_value.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1737-min_char_satisfy_1of3_cond.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1736-lastest_time_replace_hidden_digit.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1735-count_way_make_array_with_prod.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1734-decode_xor_permutation.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1733-min_num_people_to_teach.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1732-find_highest_altitude.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1727-largest_submatrix_with_rearrange.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1726-tuple_with_same_product.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1748-sum_of_unique_elem.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1749-max_abs_sum_of_any_subarray.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1750-min_len_str_after_del_similar_end.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1751-max_event_can_be_attend_2.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1752-check_array_sorted_rotated.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1753-max_score_remove_stone.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1754-largest_merge_two_str.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
+    <ClCompile Include="1755-closest_subseq_sum.cpp">
+      <Filter>1701-1800</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
